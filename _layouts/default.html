@@ -1,6 +1,20 @@
 ---
-theme :
-  name : bootstrap-3
+layout: compress
 ---
-{% include JB/setup %}
-{% include themes/bootstrap-3/default.html %}
+{% include head.html %}
+<body id="top-of-page" class="{{ page.format }}">
+	{% include navigation.html %}
+
+	{% include masthead.html %}
+
+	{% if page.breadcrumb == true %}
+	{% include breadcrumb.html %}
+	{% endif %}
+
+	{{ content }}
+
+	{% include footer.html %}
+	
+	{% include footer_scripts.html %}
+</body>
+</html>
