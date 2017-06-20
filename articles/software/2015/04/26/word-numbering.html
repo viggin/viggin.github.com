@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width initial-scale=1">
+
+<meta property="og:title" content="Word自动编号解决方案：引文、图表、公式">
+<title>Word自动编号解决方案：引文、图表、公式</title>
+<meta property="og:description" content="我觉得LaTeX比起word最方便的地方就在于它对各种编号的自动处理，例如图表、章节、公式、引用文献什么的，而且直接用一个label就可以引用。而word的优势在于其所见即所得的直观，并且可以容易地插入各种内容，如图片、表格等。但word的自动编号功能就比较让人头疼了，希望微软以后能将LaTeX的方法引入到wor...">
+<meta property="og:url" content="http://yanke23.com/articles/software/2015/04/26/word-numbering.html">
+<meta property="og:site_name" content="Ke YAN's blog">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@">
+<meta name="twitter:creator" content="@">
+<meta name="twitter:title" content="Word自动编号解决方案：引文、图表、公式">
+<meta name="twitter:description" content="我觉得LaTeX比起word最方便的地方就在于它对各种编号的自动处理，例如图表、章节、公式、引用文献什么的，而且直接用一个label就可以引用。而word的优势在于其所见即所得的直观，并且可以容易地插入各种内容，如图片、表格等。但word的自动编号功能就比较让人头疼了，希望微软以后能将LaTeX的方法引入到wor...">
+<meta name="twitter:url" content="http://yanke23.com/articles/software/2015/04/26/word-numbering.html">
+
+<meta name="keywords" content="research, programming, blog">
+
+<link rel="icon" href="/images/icoyk.png">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="canonical" href="http://yanke23.com/articles/software/2015/04/26/word-numbering.html">
+<!--<link rel="alternate" type="application/atom+xml" title="Ke YAN's blog" href="http://yanke23.com/feed.xml" /> -->
+
+<!-- sometimes slow
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+-->
+<!--Google Analytics-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61796294-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+
+
+
+
+<body>
+
+<div class="container">
+
+  <header class="site-header">
+
+  <div class="wrapper">
+
+    <h1 class="site-title"><a href="/">Ke YAN's blog</a></h1>
+    <h3 class="site-meta">Postdoc @ NIH, US</h3>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+      <div class="trigger">
+	  <!--
+        
+        
+        <a class="page-link" href="/about/">About</a>
+        
+        
+        
+        <a class="page-link" href="/archives/archives.html">Archives</a>
+        
+        
+        
+        <a class="page-link" href="/programs/c.html">Programs-C</a>
+        
+        
+        
+        <a class="page-link" href="/archives/categories.html">Categories</a>
+        
+        
+        
+        <a class="page-link" href="/cv/">CV</a>
+        
+        
+        
+        <a class="page-link" href="/programs/cv.html">Programs-CV</a>
+        
+        
+        
+        <a class="page-link" href="/guestbook/">Guestbook</a>
+        
+        
+        
+        <a class="page-link" href="/">Home</a>
+        
+        
+        
+        
+        
+        
+        
+        <a class="page-link" href="/programs/matlab.html">Programs-Matlab</a>
+        
+        
+        
+        <a class="page-link" href="/programs/ml.html">Programs-ML</a>
+        
+        
+        
+        <a class="page-link" href="/programs/others.html">Programs-Others</a>
+        
+        
+        
+        <a class="page-link" href="/programs/others.html">Programs-Others</a>
+        
+        
+        
+        <a class="page-link" href="/photos/">Photos</a>
+        
+        
+        
+        <a class="page-link" href="/programs/">Programs-Featured</a>
+        
+        
+        
+        <a class="page-link" href="/research/">Research</a>
+        
+        
+        
+        <a class="page-link" href="/research/">Research</a>
+        
+        
+        
+        <a class="page-link" href="/archives/tags.html">Tags</a>
+        
+        
+        
+        <a class="page-link" href="/tobedone.html">To be done</a>
+        
+        
+        
+        
+		-->
+		<a class="page-link" href=" /">Home</a>
+		<a class="page-link" href=" /research/">Research</a>
+		<a class="page-link" href=" /programs/">Programs</a>
+		<a class="page-link" href=" /archives/archives.html">Posts</a>
+		<!--<a class="page-link" href=" /photos/">Photos</a>-->
+		<a class="page-link" href=" /about/">About</a>
+		<a class="page-link" href=" /guestbook/">Guestbook</a>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    
+
+  <div class="page-content col-sm-8">
+    <div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 itemprop="name" class="post-title">Word自动编号解决方案：引文、图表、公式</h1>
+    <meta itemprop="keywords" content="Word,编号,引用" />
+    <p class="post-meta">
+    Posted in
+    
+    <a href="/categories/#articles">articles</a>&nbsp;
+    
+    <a href="/categories/#software">software</a>&nbsp;
+     
+    
+    and tagged
+    
+    <a href="/tags/#Word" title="Word">Word </a>, 
+    
+    <a href="/tags/#编号" title="编号">编号 </a>, 
+    
+    <a href="/tags/#引用" title="引用">引用 </a>
+    
+    
+    <time itemprop="datePublished" datetime="2015-04-26">
+    on Apr 26, 2015
+    </time>
+    </p>
+  </header>
+
+  <article class="post-content" itemprop="articleBody">
+    <p>我觉得LaTeX比起word最方便的地方就在于它对各种编号的自动处理，例如图表、章节、公式、引用文献什么的，而且直接用一个label就可以引用。而word的优势在于其所见即所得的直观，并且可以容易地插入各种内容，如图片、表格等。但word的自动编号功能就比较让人头疼了，希望微软以后能将LaTeX的方法引入到word中。不过在此之前，只好用word提供的交叉引用功能了，现总结如下：</p>
+
+<p><strong>参考文献</strong></p>
+
+<p>参考文献的自动编号很容易，建一个编号列表就可以。引用的时候，打开“引用”选项卡里的“交叉引用”对话框，“引用类型”选“编号项”，“引用内容”选“段落编号”，然后选中要插入的参考文献条目，点“插入”就可以了。</p>
+
+<p>至于参考文献本身的格式化，我是先用谷歌学术搜索到文献后“导入Endnote”，然后从Endnote里选好Output Style，从Preview窗口里直接复制。</p>
+
+<!-- more -->
+
+<p><img src="\images\posts\2015-04-25_Endnote.jpg" /></p>
+
+<p>当然你也可以用Endnote插件的引用插入功能，可以直接插入格式化好的文献，不过缺点就是比较慢，不推荐。</p>
+
+<p><strong>图片和表格</strong></p>
+
+<p>图表的自动编号要用到“引用”选项卡里的“插入题注”功能。从对话框里选好“标签”（是图还是表），如果没有适合的还可以“新建标签”，然后点确定就可以。要在文章中引用的时候，也是在“交叉引用”对话框里，“引用类型”选图或表，“引用内容”选“只有标签和编号”。</p>
+
+<p><strong>公式</strong></p>
+
+<p>最复杂的就是公式的编号。方法其实和图表类似，不过如果你用图表的方法插入题注之后交叉引用，就会发现一引用就把整个公式都插入进来了。我用的方法是参考了<a href="http://www.fmddlmyy.cn/text58.html">这个网页</a>，引用如下：</p>
+
+<blockquote>
+  <ol>
+    <li>在公式后tab到一个适合插入公式编号的位置后回车。</li>
+    <li>在<em>新行</em>用“插入”-&gt;“引用”-&gt;“题注”插入公式编号。这时公式编号行是“题注”样式，公式行是原来的样式。</li>
+    <li>将光标移到公式行的行尾，按下Ctrl+Alt+Enter键插入一个样式分隔符。这时公式编号行会连到公式行的末尾。看上去就是在同一行。 这时公式编号行还是“题注”样式，公式行也还是原来的样式。</li>
+    <li>在需要引用公式的地方用“交叉引用”引用公式编号，可以选择“整项题注”引用公式编号行的所有内容。</li>
+  </ol>
+</blockquote>
+
+<p>这个网页虽然介绍的是很老版本的word的方法，不过对我的word2013依然适合。这个方法的关键在于用Ctrl+Alt+Enter键插入一个separator，之后就可以在一行内应用两个样式，所以word在交叉引用时就不会把公式本身也当成题注的一部分了。</p>
+
+<p>如果还想让公式自动居中，编号右对齐怎么办呢？可以按照<a href="http://www.zhihu.com/question/19689000">《如何在 Word 2010 中给公式自动编号？》</a>这篇文章中的做法，新建一个“居中公式”样式，然后设置其制表符位置。之后将公式设置成这个样式，在公式前后各按一下Tab，就可以对齐了。不过这个网页里面没提到separator。想交叉引用必须加separator，否则就会把公式本身一起引进去。</p>
+
+<p>其他一些注意事项：</p>
+
+<ul>
+  <li>这样自动编号和引用的好处在于，当你想更新引用的编号数字的时候，<strong>全选，右键“更新域”</strong>就可以了，不用手工一个一个的去改，很方便。</li>
+  <li>“交叉引用”这个对话框是<strong>非模态</strong>的，可以打开后就放在边上（其实最好设计成可停靠的选项卡）。</li>
+  <li>就像Ctrl+Alt+Enter一样，word里有一些在界面上找不到的功能，例如<strong>Ctrl+Enter是换行但不分段，Shift+F5是跳到上一个视图</strong>，等等。有些很有用，但找不到，大概是word本身做的太复杂了吧。从“选项”-“自定义功能区”-“键盘快捷方式：自定义”里可以查看并修改。</li>
+  <li>如果拿别人的模板来修改，可能会遇到莫名其妙的错误，此时可以<strong>新建一个文档，自己去创建那些样式</strong>，一般就没事了。</li>
+</ul>
+
+  </article>
+  <hr />
+</div>
+
+
+<section class="pager">
+  <ul>
+    
+    <li class="previous"><a href="/articles/software/2015/04/11/Foxit-reader-close-file-bug.html" title="Foxit pdf阅读器不及时释放文件的bug解决">&larr; Older</a></li>
+    
+    
+    <li class="next"><a href="/articles/web/2016/04/17/change-url-and-host.html" title="域名变动，网站迁移到coding.net">Newer &rarr;</a></li>
+    
+  </ul>
+</section>
+
+
+<div id="disqus_thread"></div>
+
+<script type="text/javascript">
+
+  var disqus_developer = 1;
+
+var disqus_shortname ='yanke23';
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+    <section class="pager">
+  
+  
+</section>
+
+
+  </div>
+  <div class="col-sm-2">
+<div class="sidebar-module about">
+  <h4>About Me</h4>
+  <img title="YAN Ke" src="/images/aboutme.jpg" alt="YAN Ke"/>
+  <span>Please contact me via</span>
+  <br />
+
+  
+
+<ul>
+<li> <!--<a href="mailto:yankethu &lt;at&gt; foxmail.com" title="mailto: yankethu &lt;at&gt; foxmail.com">Email</a>--> yankethu &lt;at&gt; foxmail.com </li>
+  
+  <!--
+  <a href="https://twitter.com/" title="TwitterID: ">Twitter</a>
+   -->
+ 
+<li> <a href="http://download.csdn.net/user/viggin/uploads" title="CSDNID: viggin">CSDN</a> </li>
+  
+<li> <a href="https://cn.mathworks.com/matlabcentral/fileexchange/index?term=authorid%3A108525" title="MathworksID: 2503880-edward-wiggin">Matlab Center</a> </li>
+  
+<li> <a href="https://github.com/viggin" title="GithubID: viggin">Github</a> </li>
+
+<li> <a href="http://weibo.com/u/2619635890" title="WeiboID: 2619635890">微博</a> </li>
+</ul>
+  
+
+</div>
+
+<div class="sidebar-module">
+	<h4>Recent Posts</h4>
+	
+		
+			<li>
+				<a href=" /articles/research/2016/04/17/Yet-ANother-pattern-recognition-matlab-toolbox.html" title="Yet ANother patter recognition matlab toolbox" rel="bookmark">Yet ANother patter recognition matlab toolbox</a>
+			</li>
+		
+	
+		
+			<li>
+				<a href=" /articles/research/2016/04/17/A-domain-adaptation-matlab-toolbox.html" title="A domain adaptation matlab toolbox" rel="bookmark">A domain adaptation matlab toolbox</a>
+			</li>
+		
+	
+		
+			<li>
+				<a href=" /articles/web/2016/04/17/change-url-and-host.html" title="域名变动，网站迁移到coding.net" rel="bookmark">域名变动，网站迁移到coding.net</a>
+			</li>
+		
+	
+		
+			<li>
+				<a href=" /articles/software/2015/04/26/word-numbering.html" title="Word自动编号解决方案：引文、图表、公式" rel="bookmark">Word自动编号解决方案：引文、图表、公式</a>
+			</li>
+		
+	
+		
+			<li>
+				<a href=" /articles/software/2015/04/11/Foxit-reader-close-file-bug.html" title="Foxit pdf阅读器不及时释放文件的bug解决" rel="bookmark">Foxit pdf阅读器不及时释放文件的bug解决</a>
+			</li>
+		
+	
+		
+			<li>
+				<a href=" /articles/web/2015/04/08/yanke23-how-to-build.html" title="yanke23建站简记" rel="bookmark">yanke23建站简记</a>
+			</li>
+		
+	
+		
+			<li>
+				<a href=" /articles/web/2015/04/08/git-learning-notes.html" title="git初学备忘" rel="bookmark">git初学备忘</a>
+			</li>
+		
+	
+</div>
+
+
+<div class="sidebar-module">
+	<h4>Categories</h4>
+	
+		
+			<li><a href="/archives/categories.html#articles" title="articles" rel="7">articles (7)</a></li>
+		
+	
+		
+			<li><a href="/archives/categories.html#web" title="web" rel="3">web (3)</a></li>
+		
+	
+		
+			<li><a href="/archives/categories.html#software" title="software" rel="2">software (2)</a></li>
+		
+	
+		
+			<li><a href="/archives/categories.html#research" title="research" rel="2">research (2)</a></li>
+		
+	
+</div>
+
+
+<div class="sidebar-module">
+  <h4>Tags</h4>
+  
+    <a href="/tags/#编程" title="编程" rel="1">编程</a> &nbsp;
+  
+    <a href="/tags/#git" title="git" rel="2">git</a> &nbsp;
+  
+    <a href="/tags/#网站" title="网站" rel="2">网站</a> &nbsp;
+  
+    <a href="/tags/#Jekyll" title="Jekyll" rel="1">Jekyll</a> &nbsp;
+  
+    <a href="/tags/#markdown" title="markdown" rel="1">markdown</a> &nbsp;
+  
+    <a href="/tags/#html" title="html" rel="1">html</a> &nbsp;
+  
+    <a href="/tags/#css" title="css" rel="1">css</a> &nbsp;
+  
+    <a href="/tags/#福昕" title="福昕" rel="1">福昕</a> &nbsp;
+  
+    <a href="/tags/#Foxit" title="Foxit" rel="1">Foxit</a> &nbsp;
+  
+    <a href="/tags/#pdf阅读器" title="pdf阅读器" rel="1">pdf阅读器</a> &nbsp;
+  
+    <a href="/tags/#bug" title="bug" rel="1">bug</a> &nbsp;
+  
+    <a href="/tags/#Word" title="Word" rel="1">Word</a> &nbsp;
+  
+    <a href="/tags/#编号" title="编号" rel="1">编号</a> &nbsp;
+  
+    <a href="/tags/#引用" title="引用" rel="1">引用</a> &nbsp;
+  
+    <a href="/tags/#coding.net" title="coding.net" rel="1">coding.net</a> &nbsp;
+  
+    <a href="/tags/#gitcafe" title="gitcafe" rel="1">gitcafe</a> &nbsp;
+  
+    <a href="/tags/#域名" title="域名" rel="1">域名</a> &nbsp;
+  
+    <a href="/tags/#domain adaptation" title="domain adaptation" rel="1">domain adaptation</a> &nbsp;
+  
+    <a href="/tags/#transfer learning" title="transfer learning" rel="1">transfer learning</a> &nbsp;
+  
+    <a href="/tags/#matlab" title="matlab" rel="2">matlab</a> &nbsp;
+  
+    <a href="/tags/#toolbox" title="toolbox" rel="2">toolbox</a> &nbsp;
+  
+    <a href="/tags/#pattern recognition" title="pattern recognition" rel="1">pattern recognition</a> &nbsp;
+  
+    <a href="/tags/#machine learning" title="machine learning" rel="1">machine learning</a> &nbsp;
+  
+</div>
+
+
+<div class="sidebar-module">
+  <h4>Blogroll</h4>
+  
+  <li><a href="http://yulijia.net/freshman21" title="Another Jekyll blog theme">Freshman21</a></li>
+  
+  <li><a href="http://www4.comp.polyu.edu.hk/~csdzhang/" title="Prof. David Zhang">Prof. David Zhang</a></li>
+  
+  <li><a href="http://www.quxiaofeng.me/" title="Xiaofeng Qu">多才多艺的师兄</a></li>
+  
+  <li><a href="http://www.leizhang.tk/" title="Lei Zhang">学术牛人师兄</a></li>
+  
+</div>
+
+
+<div class="sidebar-module">
+  <h4>Archives</h4>
+
+  
+  
+  
+  
+  
+  <li id="2016" > <a href="/archives/#2016">2016</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li id="2015" > <a href="/archives/#2015">2015</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+</div>
+
+
+</div>
+
+
+
+  
+
+  <footer class="site-footer">
+
+  <p>Copyright &copy; <a href="/">Ke YAN's blog</a></p>
+  <p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a> 
+  on 
+  
+  <a href="https://github.com/">Github</a>
+  
+  | Theme <a href="https://github.com/yulijia/freshman21/">Freshman21</a> Design by <a href="http://yulijia.net">Lijia Yu</a>  
+
+</footer>
+
+
+</div>
+
+</body>
+
+</html>
