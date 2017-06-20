@@ -1,0 +1,11 @@
+<div class="sidebar-module">
+	<h4>{{ site.locales[site.default_locale].Recent_Posts }}</h4>
+	{% for post in site.posts limit:7 %}
+		{% if post.categories[0] != "update" %}
+			<li>
+				<a href="{{ site.baseurl }} {{ post.url }}" title="{{ post.title }}" rel="bookmark">{{ post.title }}</a>
+			</li>
+		{% endif %}
+	{% endfor %}
+</div>
+

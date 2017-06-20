@@ -1,0 +1,263 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<title>Aaron 2015</title>
+<link href="http://www.bayims.cn/themes/images/base.css" rel="stylesheet" type="text/css">
+<link href="http://www.bayims.cn/themes/images/article.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+
+function getKey(){
+		var key = myform.answer.value;
+		var keyLen = key.length;
+		var ret = 0;
+		for (var j = 0; j < keyLen; j++) {
+			ret = ret*10 + key.charCodeAt(j) % 10;
+		}
+		return ret;
+	}
+
+	function encrypt(){
+		
+		var content = document.getElementById("article").innerHTML;
+		var contLen = content.length;
+		var key = getKey();
+
+		var arr = new Array();
+		for (var i = 0; i < contLen; i++) {
+			var codeTrans = (content.charCodeAt(i)) ^ key;
+			arr.push(codeTrans);
+				//console.log(codeTrans);
+		}
+		var newCont = String.fromCharCode.apply(null,arr);
+		document.getElementById("article").innerHTML = newCont;
+
+	}
+
+	function decrypt(){
+		
+		var content = document.getElementById("article").innerHTML;
+		var contLen = content.length;
+		var key = getKey();
+		
+		var arr = new Array();
+		for (var i = 0; i < contLen; i++) {
+			var codeTrans = (content.charCodeAt(i)) ^ key;
+			arr.push(codeTrans);
+		}
+	var newCont = String.fromCharCode.apply(null,arr);
+	document.getElementById("article").innerHTML = newCont;
+	}
+</script>
+</head>
+
+<body>
+<a name="top"></a>
+<div class="header">
+
+	<div class="t">
+
+		<a href="http://www.bayims.cn/" class="logo l">八一中学</a>
+
+		<div class="r">
+			
+<p class="login"><a href="http://www.bayims.cn/notice.php">登陆</a></p>			
+			<div class="daoh">
+				<ul>
+					<li class="home"><a href="http://www.bayims.cn/">Home</a></li>
+					<li class="sitemap"><a href="http://www.bayims.cn/sitemap.php" target="_blank">Sitemap</a></li>
+					<li class="contact"><a href="http://www.bayims.cn/contact.php" target="_blank">Contact</a></li>
+					<br />
+				</ul>
+				<form method="post" action="/search.php">
+				<input type="text" name="name" value="" class="search"/>
+				</form>
+				<br />
+			</div>
+		</div>
+
+		<br />
+	</div>
+
+	<div class="navBox"><nav>
+		<ul class="nav">
+			<li><h5><a href="/column-1.html">新闻资讯</a></h5><dl><dd><a href="/column-18.html">八一新闻</a></dd><dd><a href="/column-19.html">八一时报</a></dd><dd><a href="/column-20.html">八一校刊</a></dd><dd><a href="/column-21.html">专题报道</a></dd><dd><a href="/column-22.html">媒体八一</a></dd></dl></li><li><h5><a href="/column-2.html">八一概况</a></h5><dl><dd><a href="/column-10.html">学校简介</a></dd><dd><a href="/column-11.html">历任校长</a></dd><dd><a href="/column-12.html">组织机构</a></dd><dd><a href="/column-13.html">管理团队</a></dd><dd><a href="/column-14.html">名师风采</a></dd><dd><a href="/column-15.html">学校荣誉</a></dd></dl></li><li><h5><a href="/column-3.html">品质文化</a></h5><dl><dd><a href="/column-256.html">品牌标识</a></dd><dd><a href="/column-23.html">理念体系</a></dd><dd><a href="/column-24.html">办学历史</a></dd><dd><a href="/column-25.html">品牌形象</a></dd><dd><a href="/column-26.html">行为公约</a></dd><dd><a href="/column-27.html">校徽/旗/歌/服</a></dd><dd><a href="/column-55.html">宣传片</a></dd></dl></li><li><h5><a href="/column-4.html">课程设置</a></h5><dl><dd><a href="/column-204.html">课程体系</a></dd></dl></li><li><h5><a href="/column-5.html">教育教学</a></h5><dl><dd><a href="/column-30.html">教育科研</a></dd><dd><a href="/column-31.html">教师培训</a></dd><dd><a href="/column-32.html">教研园地</a></dd><dd><a href="/column-252.html">德育工作</a></dd><dd><a href="/column-219.html">特色教育</a></dd><dd><a href="/column-34.html">成果展示</a></dd></dl></li><li><h5><a href="/column-6.html">校园生活</a></h5><dl><dd><a href="/column-35.html">学生社团</a></dd><dd><a href="/column-36.html">特色活动</a></dd><dd><a href="/column-37.html">学生风采</a></dd><dd><a href="/column-213.html">学生组织</a></dd><dd><a href="/column-38.html">随笔感悟</a></dd><dd><a href="/column-39.html">家长委员会</a></dd></dl></li><li><h5><a href="/column-7.html">交流合作</a></h5><dl><dd><a href="/column-40.html">参观来访</a></dd><dd><a href="/column-41.html">外出交流</a></dd><dd><a href="/column-255.html">合作办学</a></dd><dd><a href="/column-42.html">海外研修</a></dd><dd><a href="/column-43.html">修学游历</a></dd></dl></li><li><h5><a href="/column-8.html">党建工会</a></h5><dl><dd><a href="/column-44.html">党建工作</a></dd><dd><a href="/column-45.html">工会之窗</a></dd></dl></li><li><h5><a href="/column-9.html">信息公告</a></h5><dl><dd><a href="/column-46.html">招生通告</a></dd><dd><a href="/column-47.html">人才招聘</a></dd><dd><a href="/column-48.html">毕业信息</a></dd><dd><a href="/column-49.html">对外公告</a></dd></dl></li><br />
+		</ul>
+		<ul class="nav_xb">
+			<li><a href="http://xxb.bayims.cn/" target="_blank">小学部</a></li>
+			<li><a href="http://czb.bayims.cn/" target="_blank">初中部</a></li>
+			<li><a href="http://gzb.bayims.cn/" target="_blank">高中部</a></li>
+			<li><a href="http://gjb.bayims.cn/" target="_blank">国际部</a></li><!--  -->
+			<br />
+		</ul>
+		<br />
+	</nav></div>
+
+</div>
+
+
+<!--<div class="ban">
+   <div class="ban-inner">
+      <img src="photo/2.2ban_02.gif"/>
+   </div>
+</div>--><div class="ban">
+   <div class="ban-inner">
+      <!-- <img src="http://up.bayims.cn/image/2015/02/15/062730_379.png"/> -->
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="1400" height="225">
+  <param name="movie" value="http://www.bayims.cn/themes/swf/5.swf">
+  <param name="quality" value="high">
+  <param name="wmode" value="opaque">
+  <embed src="http://www.bayims.cn/themes/swf/5.swf" quality="high" wmode="opaque" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="1400" height="225"></embed>
+</object>
+   </div>
+</div>
+<div class="con">
+	<div class="return"><a href="http://www.bayims.cn/">首页</a>
+ / <a href="/column-5.html">教育教学</a> / <a href="/column-32.html">教研园地</a> / <a href="/column-59.html">教学活动</a></div>	<div class="conL">
+	<h4><a href="http://www.bayims.cn/">返回首页</a></h4>
+	<dl>
+		<dt>教育教学</dt>
+<dd><a href="/column-30.html">教育科研</a></dd><dd><a href="/column-31.html">教师培训</a></dd><dd><a href="/column-32.html">教研园地</a></dd><dd><a href="/column-252.html">德育工作</a></dd><dd><a href="/column-219.html">特色教育</a></dd><dd><a href="/column-34.html">成果展示</a></dd>	</dl>
+</div>	<div class="conR">
+		<div class="column_h">
+	<h3>教研园地</h3>
+	
+<ul><li><a href="/column-59.html">教学活动</a></li><li><a href="/column-60.html">校本教研</a></li><li><a href="/column-61.html">课例展示</a></li><br /></ul><br />	
+</div>		<div class="col article">
+			<h1>Aaron 2015</h1>
+						<h2></h2>
+			<div class="page-info">
+<div class="l">
+	2015年06月08日 22:32
+	　点击：0	　作者：门口扫地组 闫大爷　		</div>
+<div class="r">
+	<span><div class="bshare-custom"><a class="bshare-more share"></a></div></span>
+	<span><a href="/print-7532.html" class="print"></a></span>
+	<span><a href="javascript:text_size('d');" class="ajian"></a></span>
+	<span><a href="javascript:text_size('x');" class="ajia"></a></span>
+</div>
+			</div>
+			<div class="content" id="article">Ä廀枼救瘰亾叼ﾸ马ìí獙瘰咸寒乘垜帓俹亾埤姉篽弱亾譊ザ鑷塄呹咺ﾸ跄软旭嬐瘰叀亹暛頰攭亙瘰譙攳肵庼ザÄ¾¾Ä₨咸寒乘ﾸ哾譽妓嬂亴亞姉洼惛ﾵ乾妝暛报瘰疫救ﾵ₩Ä¾¾Ä₨只肵庼疫救彟令ₒₒ₩Ä¾¾Ä咸寒乘窴窴扽扽瘰噪篠郧ザ孍为轭亞犅撪悞瘰肵庼ﾸ妓嬂嵆繻枽串亴嬮瘰凹生刯ザ卞暛旄寒肵庼瘰疫救于乴仼垜譙攳譊亾嬗康哖ﾫ茟韪旄寒肵庼吸譙攳肵庼貼惿犅串ﾫ枽瘰咸寒疮腇垜恇ﾸ挑亿柑亹侮褵报乘邵禈狝咓ﾫ咒劭岅侮蠟濨襰劭ﾫÄ¾¾Ä₨于串補禎曚妝咸帲仿憻ﾸ报儇嬮邵繭妓嬂亴亞禈狝ﾵ乾妝亾叼瘰譊遉疅报柑亾串ﾵ₩Ä¾¾Ä廂氕枽垜憻寒疫乘瘰恾謂ﾸ轭俹肵庼徴奿垜鹥柋亾儭亴餢譣ﾸ輍儭輍镚郧ﾮ₨俔乘枽貵譏轳报瘰攳穔ﾫ₩Ä¾¾Ä₨ₒₒ譏轳怜垜寒梕翥穭亾瘰攄镏窋ザ₩枽与撙莘劄ザÄ¾¾Ä₨呺哴ﾸ氕恇劄转枽与轭仼凇彷报嗾ザ逗俔襽弣儭瘰夶信ﾫ₩Ä¾¾Ä₨啛ₒₒ弼枽穑贗ₒₒ₩Ä¾¾Ä₨俔轭亞議謎仫弼枽贗ザ姉串ﾸ乾妝繭妓嬂謆报垜俔乘轭亞廀鼰儭瘰亴餢譣ザ劮拹貵撙莘瘰ﾸ譃穭跃柑繭妓嬂譏亴郹ザ₩Ä¾¾Ä₨ゾ助郳哜枟枼肷枽憫タÖÆ¾ÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄ祿曜浕烄亹镏麕ﾸÖÆ¾ÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄ甥枞救跃赛与窴ザÖÆ¾ÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄ鹰卥圶驟马亽綛ﾸÖÆ¾ÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄÚÖÇÄ檞瞽穢瞈禈扨亷ザ₩Ä¾¾Ä₨轭餢譣哖ﾸ俨肱襵曛疫恱ﾸ戦卥串腞嵅垜彭砸疫涏亙瘰俧侮吸憫卣ザ餢凼瞿箘亴卑ザ亴亞祿寣ﾸ叇溆杧串亴祹蒓瓫瘰沠沯ﾸ人咺攳€浕烄₭癌哈帠ₒₒ₩Ä¾¾Ä噯叵劲鐫咺ﾸ寒疫乘瘰箠謄嵆繻謄湕串亐徔縌ザ₨姉串ﾸ敂镀劄串ﾸ乾妝俨亮暛ﾸ譃妓嬂垜暫枫救瘰溱曜噯瀍跃帾跄垜赛亾ﾸ僮兎檞瞽穢瞈瘰梃寤ﾸ俧侮轭餢譣瘰憻堷ザ₩Ä¾¾Ä₨ₒₒ₩¾¾ÄÄ弼彟箘丸舶旄寒譊卼劄串ﾸ轭殕只肵庼繭妓嬂庒柑瘰暛亴郧曎刯頬ザÄ¾¾Ä₨譃妓嬂疜亴箠戾亿韖轭亞噊瘰拴枽竎梈寤轪挑跃柑ﾸ廂亠乑縖苆梈寤徴奿吸繧柫ザ亹褵镚报轭郧頬暛悺仼恇兎柑瘰ザ₩Ä¾¾ÐÝÂÐÝÂ×ØÕÇÇÄÝÙÓÝÙÓÇÆ×ÝÙÕÓÑÇÍÄÚÓÐÝÂÐÝÂ¾¾Ä噯叵劲鐫咺ザÄ¾¾Ä₨姉串ﾸ瞿柑妓嬂垜赛弰襰劦亾韖瘰聉刯转枽拴殔美嗾ﾸ噪匏忧俨亮咓ザ逗亞貵ﾸ功手櫕瘚摒串ﾸ旀徔縌遉护鹥瘰串ザ₩Ä¾¾Ä箘亽舶暛狝璲譊ザ只肵庼垜戡必乞亾暊禎串亴徔瘰燓狳ザÄ¾¾ÐÝÂÐÝÂ×ØÕÇÇÄÝÙÓÝÙÓÇÆ×ÝÙÕÓÑÇÖÐÀÅÞÄÓÐÝÂÐÝÂ¾¾Ä₨报转廀迏瘰敂傭弼唨殖拧卄璷ﾸ譃妓嬂乺刜酻吸刜聉嬼惦瘰襦帒兎卥ﾸ庚报謊謕亴亞轪繙软璷瘰篢痑ₒₒ₩Ä¾¾Ä转氕譀嬸ﾸ旭嬐瘰镜稵熂蠟拧徴串ﾸ垜寒疫乘凱湕満枯瘰汜襲亿ﾸ亴亞技矴南翝立矴盉妓覶瘰与跄软柑ﾸ孍謆卄亾瘰与譀郧ﾮ₨挑劄枩隇厎缐侣亊我ﾸ轭亞旭嬐瘰肵庼兎猄串憫儦卥灓吇啉瘰畳爂ﾸ于串頰隆ùñæçﾸ譃怜赫报跄亴贫ﾸ鞴褵阠礏妝ザ₩譀矴ﾸ亹疅劲譀垄岲謆卄亾瘰肵庼扽跄串ﾸ跄幾酸阤縒侔柑哈唾塄ﾮÄ¾¾Ä₨报氕畱ﾵ报转聉謆ﾵ报轭转枽亞嬸忖壟竎吸隱譏璲襗氕兎嬸哖ₒₒ转枽ú郧曎刯頬ₒₒ₩Ä¾¾ÐÝÂÐÝÂ×ØÕÇÇÄÝÙÓÝÙÓÇÆ×ÝÙÕÓÑÇÖÐëÀÆÕÝÚÞÄÓÐÝÂÐÝÂ¾ÄÕØÝÓÚ×ÑÚÀÑÆÒÛÚÀ×ÛØÛÆÓÆÑÍ只肵庼垜阠礏亙ÒÛÚÀÄ¾¾Ä轭敂ﾸ拟垄繰镟妓犃乺镜咺跄兎柑ﾸ譙酹彷闋瘰孍妓嬂譀郧ﾮÄ¾¾Ä₨嵑俨酹褵ﾸ踟俧晀酹褵ﾸ妓嬂褵汜憻踟俧呒Ê转枽ﾸ傫疫救瘰枎侮繭功与兎阊頬ﾸ暛亴祹亹与郧瘰裸于呒Ê₩Ä</div>
+
+			<div class="ending">
+<form name="myform">
+	请输入你的手机号除以98271493的最小质因数的余数解密：
+		<input type="text" name="answer"/>
+		<input type="button" name="decry" value="解密" onclick="decrypt()" />
+		<input type="button" name="encry" value="加密" onclick="encrypt()" />
+	</form>  
+			</div>
+
+
+
+			<div class="shareBox">
+				<span>分享</span>
+<div class="bshare-custom icon-medium">
+	<div class="bsPromo bsPromo2"></div>
+	<a title="分享到QQ空间" class="bshare-qzone"></a>
+	<a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+	<a title="分享到人人网" class="bshare-renren"></a>
+	<a title="分享到腾讯微博" class="bshare-qqmb"></a>
+	<a title="分享到网易微博" class="bshare-neteasemb"></a>
+	<a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a>
+</div>
+			</div>
+			<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
+			<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+
+			<div class="feed-wrap">
+				<h6>相关阅读</h6>
+				<ul>
+<li><a href="/article-14150.html">名师引领，呈现精品课堂</a><span>2015-06-04</span></li><li><a href="/article-13586.html">高中数学组开展高一年级数学基础知识拉力赛</a><span>2015-04-21</span></li><li><a href="/article-13418.html">高三数学两位老师一模讲评课精彩呈现</a><span>2015-04-16</span></li><li><a href="/article-13417.html">落实有效提问 促进深度学习——政治教研组举行同课异构公开课</a><span>2015-04-15</span></li><li><a href="/article-13114.html">巧用微信平台 悦享书式生活——2016届高二年级老师搭建微信交流群</a><span>2015-04-03</span></li><li><a href="/article-12895.html">学生有效复习，教师有效提升——记初三化学组参与“深度学习”项目活动</a><span>2015-03-20</span></li><li><a href="/article-12891.html">在研究、交流中提升——初三物理组完成两节研究课</a><span>2015-03-20</span></li><li><a href="/article-12792.html">Spelling Bee 初二年级英语单词拼写大赛顺利结束</a><span>2015-03-14</span></li><li><a href="/article-12791.html">初中英语听说课课例研讨-----初中英语组教研活动纪实</a><span>2015-03-14</span></li><li><a href="/article-12699.html">数学基础知识拉力赛——初一数学组</a><span>2015-03-13</span></li>				</ul>
+			</div><!-- end feed-wrap -->
+		</div><!-- end article -->
+		<div id="topBtu">
+			<ul>
+				<li><a href="http://www.bayims.cn/" class="home">返回首页</a></li>
+				<li><a href="#top" class="top">返回首页</a></li>
+			</ul>
+		</div>
+	</div><!-- end conR -->
+	<br />
+</div>
+
+<div class="footer">
+   <div class="f-nav">
+      <div class="columnL">
+		<dl><dt><a href="/column-1.html">新闻资讯</a></dt><dd><a href="/column-18.html">八一新闻</a></dd><dd><a href="/column-19.html">八一时报</a></dd><dd><a href="/column-20.html">八一校刊</a></dd><dd><a href="/column-21.html">专题报道</a></dd><dd><a href="/column-22.html">媒体八一</a></dd></dl><dl><dt><a href="/column-2.html">八一概况</a></dt><dd><a href="/column-10.html">学校简介</a></dd><dd><a href="/column-11.html">历任校长</a></dd><dd><a href="/column-12.html">组织机构</a></dd><dd><a href="/column-13.html">管理团队</a></dd><dd><a href="/column-14.html">名师风采</a></dd><dd><a href="/column-15.html">学校荣誉</a></dd></dl><dl><dt><a href="/column-3.html">品质文化</a></dt><dd><a href="/column-256.html">品牌标识</a></dd><dd><a href="/column-23.html">理念体系</a></dd><dd><a href="/column-24.html">办学历史</a></dd><dd><a href="/column-25.html">品牌形象</a></dd><dd><a href="/column-26.html">行为公约</a></dd><dd><a href="/column-27.html">校徽/旗/歌/服</a></dd><dd><a href="/column-55.html">宣传片</a></dd></dl><dl><dt><a href="/column-4.html">课程设置</a></dt><dd><a href="/column-204.html">课程体系</a></dd></dl><dl><dt><a href="/column-5.html">教育教学</a></dt><dd><a href="/column-30.html">教育科研</a></dd><dd><a href="/column-31.html">教师培训</a></dd><dd><a href="/column-32.html">教研园地</a></dd><dd><a href="/column-252.html">德育工作</a></dd><dd><a href="/column-219.html">特色教育</a></dd><dd><a href="/column-34.html">成果展示</a></dd></dl><dl><dt><a href="/column-6.html">校园生活</a></dt><dd><a href="/column-35.html">学生社团</a></dd><dd><a href="/column-36.html">特色活动</a></dd><dd><a href="/column-37.html">学生风采</a></dd><dd><a href="/column-213.html">学生组织</a></dd><dd><a href="/column-38.html">随笔感悟</a></dd><dd><a href="/column-39.html">家长委员会</a></dd></dl><dl><dt><a href="/column-7.html">交流合作</a></dt><dd><a href="/column-40.html">参观来访</a></dd><dd><a href="/column-41.html">外出交流</a></dd><dd><a href="/column-255.html">合作办学</a></dd><dd><a href="/column-42.html">海外研修</a></dd><dd><a href="/column-43.html">修学游历</a></dd></dl><dl><dt><a href="/column-8.html">党建工会</a></dt><dd><a href="/column-44.html">党建工作</a></dd><dd><a href="/column-45.html">工会之窗</a></dd></dl><dl><dt><a href="/column-9.html">信息公告</a></dt><dd><a href="/column-46.html">招生通告</a></dd><dd><a href="/column-47.html">人才招聘</a></dd><dd><a href="/column-48.html">毕业信息</a></dd><dd><a href="/column-49.html">对外公告</a></dd></dl>         <br class="clear"/>
+         <ul class="bu">
+			<li><a href="http://xxb.bayims.cn/" target="_blank">小学部</a></li>
+			<li><a href="http://czb.bayims.cn/" target="_blank">初中部</a></li>
+			<li><a href="http://gzb.bayims.cn/" target="_blank">高中部</a></li>
+			<li><a href="http://gjb.bayims.cn/" target="_blank">国际部</a></li>
+         </ul>
+      </div>
+      <div class="columnR">
+         <ul>
+            <li class="coR1"><a href="/visited_school.php" target="_blank">到访学校</a></li>
+            <li class="coR2"><a href="/column-47.html" target="_blank">招聘</a></li>
+            <li class="coR3"><a href="/sitemap.php" target="_blank">网站地图</a></li>
+            <li class="coR4"><a href="/contact.php" target="_blank">联系我们</a></li>
+         </ul>
+      </div>
+      <br />
+      
+   </div>
+	<div class="fb">
+		<div class="fb-inner">
+			<p>Copyright © 2012 BAYIMS Inc. All Rights Reserved    ICP备06001260</p>
+			<p>京公网安备110108007418号</p>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var selected_column = new Array();
+selected_column[0] = "教育教学";selected_column[1] = "教研园地";selected_column[2] = "教学活动";</script><script type="text/javascript" src="http://www.bayims.cn/themes/js/jquery.1.8.3.js"></script>
+<script type="text/javascript" src="http://www.bayims.cn/themes/js/_nav.js"></script>
+<script type="text/javascript">
+/*图片居中*/
+$(document).ready(function(){
+	$(".content img").each(function(){
+		$(this).parent().addClass("pimgBox");
+		$(this).wrap('<div></div>').wrap('<div class="pimg"></div>');
+		if($(this).attr("alt") ){
+			$(this).after('<p>'+$(this).attr("alt")+'</p>');
+		}
+	});
+	$(".content p.pimgBox").each(function(){
+		$(this).html($(this).html().replace(/&nbsp;/ig, "") );
+	});
+});
+
+/*字体放大缩小*/
+var txtSize = 1;
+var txtArray = new Array(14,16,18);
+function text_size(_act)
+{
+	if(_act == 'd'){if(txtSize < 2){txtSize++;}}
+	else{if(txtSize > 0){txtSize--;}}
+	$(".article p").css("font-size", txtArray[txtSize]+"px");
+
+
+}
+
+/*快捷导航条*/
+$(window).bind('scroll',function(){
+$(this).scrollTop()>500 ? $("#topBtu").css("display","block") : $("#topBtu").css("display","none");
+});
+$("#topBtu").css("right", Math.floor(($(window).width() - $(".con").width()) * 0.5) + "px");
+
+</script>
+<script type="text/javascript" >
+var jiathis_config={
+	summary:"",
+	shortUrl:false,
+	hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js" charset="utf-8"></script>
+</body>
+</html>
