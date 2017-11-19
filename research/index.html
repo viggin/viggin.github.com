@@ -14,7 +14,7 @@ layout: default
 <meta property="og:title" content="Research">
 <title>Research</title>
 <meta property="og:description" content="A personal website.">
-<meta property="og:url" content="http://yanke23.com/research/">
+<meta property="og:url" content="http://localhost:1357/research/">
 <meta property="og:site_name" content="Ke YAN's blog">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary">
@@ -22,14 +22,14 @@ layout: default
 <meta name="twitter:creator" content="@">
 <meta name="twitter:title" content="Research">
 <meta name="twitter:description" content="A personal website.">
-<meta name="twitter:url" content="http://yanke23.com/research/">
+<meta name="twitter:url" content="http://localhost:1357/research/">
 
 <meta name="keywords" content="research, programming, blog">
 
 <link rel="icon" href="/images/icoyk.png">
 <link rel="stylesheet" href="/css/main.css">
-<link rel="canonical" href="http://yanke23.com/research/">
-<!--<link rel="alternate" type="application/atom+xml" title="Ke YAN's blog" href="http://yanke23.com/feed.xml" /> -->
+<link rel="canonical" href="http://localhost:1357/research/">
+<!--<link rel="alternate" type="application/atom+xml" title="Ke YAN's blog" href="http://localhost:1357/feed.xml" /> -->
 
 <!-- sometimes slow
 <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
@@ -82,19 +82,15 @@ layout: default
         
         
         
-        <a class="page-link" href="/programs/c.html">Programs-C</a>
-        
-        
-        
         <a class="page-link" href="/archives/categories.html">Categories</a>
         
         
         
-        <a class="page-link" href="/cv/">CV</a>
-        
-        
-        
         <a class="page-link" href="/programs/cv.html">Programs-CV</a>
+        
+        
+        
+        <a class="page-link" href="/cv/">CV</a>
         
         
         
@@ -110,15 +106,7 @@ layout: default
         
         
         
-        <a class="page-link" href="/programs/matlab.html">Programs-Matlab</a>
-        
-        
-        
         <a class="page-link" href="/programs/ml.html">Programs-ML</a>
-        
-        
-        
-        <a class="page-link" href="/programs/others.html">Programs-Others</a>
         
         
         
@@ -131,10 +119,6 @@ layout: default
         
         
         <a class="page-link" href="/programs/">Programs-Featured</a>
-        
-        
-        
-        <a class="page-link" href="/research/">Research</a>
         
         
         
@@ -189,6 +173,16 @@ p.intro {text-indent:1em; font-size:0.9em}
 
 <hr />
 
+<p><strong>Unsupervised body part regression using convolutional neural network with self-organization</strong> (<a href="https://arxiv.org/abs/1707.03891">arXiv</a>)<br />
+<strong>Ke Yan</strong>, Le Lu, and Ronald M. Summers</p>
+<p class="intro">We propose unsupervised body part regressor (UBR), which builds a coordinate system for the body and outputs a continuous score for
+each slice. The score represents the normalized position of the body part in the slice.</p>
+<div align="center"><img title="UBR architecture" src="/images/research/ubr.png" width="40%" height="40%" alt="UBR architecture" /></div>
+
+<p><strong>DeepLesion: Automated Deep Mining, Categorization and Detection of Significant Radiology Image Findings using Large-Scale Clinical Lesion Annotations</strong> (<a href="https://arxiv.org/abs/1710.01766">arXiv</a>)<br />
+<strong>Ke Yan</strong><em>, Xiaosong Wang</em>, Le Lu, and Ronald M. Summers</p>
+<p class="intro">Lesion annotations are mined from PACS. A lesion detection algorithm based on Faster RCNN and an unsupervised categorization framework is proposed.</p>
+<div align="center"><img title="DeepLesion detection results" src="/images/research/deeplesion.png" width="60%" height="60%" alt="DeepLesion detection results" /></div>
 <hr />
 
 <p><em>Published:</em></p>
@@ -197,7 +191,7 @@ p.intro {text-indent:1em; font-size:0.9em}
 
 <p><strong>Learning classification and regression models for data with drift based on transfer samples</strong> (<a href="\papers\preprint_TMTL.pdf">pdf</a>, <a href="/codes/matlab/tmtl.zip">Matlab code</a>)<br />
 <strong>Ke Yan</strong>, David Zhang, and Yong Xu 
-Accepted by <em>IEEE Trans. on Instrumentation and Measurement</em> (IF = 2.456), <span class="type1">2017</span>.</p>
+<em>IEEE Trans. on Instrumentation and Measurement</em> (IF = 2.456), <span class="type1">2017</span>.</p>
 <p class="intro">We aim to compensate the two largest influential factors in e-nose applications: instrumental variation and time-varying drift. The transfer-sample-based multitask learning (TMTL) algorithm defines each device or time period as a domain, then learns a prediction model for each domain. Two paradigms, parallel and serial transfer, are designed according to the prior knowledge of the two influential factors. A dynamic model strategy is also proposed to handle continuous sample stream in the MTL framework. <!--In the bottom figure, each circle is a sample; Each Cylinder is a group of transfer samples, which also corresponds to a model; Arrows indicate the model similarity relationships.--></p>
 
 <div align="center"><img title="Model similarity priors in transfer-sample-based multitask learning (TMTL)" src="/images/research/tmtl.png" width="40%" height="40%" alt="Model similarity priors in transfer-sample-based multitask learning (TMTL)" /></div>
@@ -206,7 +200,7 @@ Accepted by <em>IEEE Trans. on Instrumentation and Measurement</em> (IF = 2.456)
 
 <p><strong>Learning Domain-Invariant Subspace Using Domain Features and Independence Maximization</strong> (<a href="\papers\17_TCyb_MIDA.pdf">pdf</a>, <a href="http://www.mathworks.com/matlabcentral/fileexchange/56645-maximum-independence-domain-adaptation--mida-">Matlab code</a>, <a href="http://yanke23.com/articles/research/2016/04/17/A-domain-adaptation-matlab-toolbox.html">domain adaptation toolbox</a>)<br />
 <strong>Ke Yan</strong>, Lu Kou, and David Zhang<br />
-Accepted by <em>IEEE Trans. on Cybernetics</em> (IF = 4.943), <span class="type1">2017</span>.</p>
+<em>IEEE Trans. on Cybernetics</em> (IF = 4.943), <span class="type1">2017</span>.</p>
 <p class="intro">Maximum independence domain adaptation (MIDA) is proposed to learn a domain-invariant subspace. It can be applied in all kinds of domain adaptation problems, including discrete or continuous distributional change, supervised/semi-supervised/unsupervised, multiple domains, classification or regression, etc. We first design "domain features", then maximize the independence between them and the learned features.</p>
 <div align="center"><img title="Effect of MIDA" src="/images/research/mida.png" width="90%" alt="Effect of MIDA" /></div>
 <p></p>

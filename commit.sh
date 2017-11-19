@@ -1,6 +1,6 @@
 # compile and commit the site
-jekyll b # build
-cd _site
+jekyll b # run in cmd
+cd _site # run in bash
 git add --all
-git commit -m "adjust index and programs"
-git push origin coding-pages
+git commit -m "add papers"
+git push origin master
