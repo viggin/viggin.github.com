@@ -14,7 +14,7 @@ layout: default
 <meta property="og:title" content="Research">
 <title>Research</title>
 <meta property="og:description" content="A personal website.">
-<meta property="og:url" content="http://yanke23.com/research/">
+<meta property="og:url" content="http://localhost:1357/research/">
 <meta property="og:site_name" content="Ke YAN's blog">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary">
@@ -22,14 +22,14 @@ layout: default
 <meta name="twitter:creator" content="@">
 <meta name="twitter:title" content="Research">
 <meta name="twitter:description" content="A personal website.">
-<meta name="twitter:url" content="http://yanke23.com/research/">
+<meta name="twitter:url" content="http://localhost:1357/research/">
 
 <meta name="keywords" content="research, programming, blog">
 
 <link rel="icon" href="/images/icoyk.png">
 <link rel="stylesheet" href="/css/main.css">
-<link rel="canonical" href="http://yanke23.com/research/">
-<!--<link rel="alternate" type="application/atom+xml" title="Ke YAN's blog" href="http://yanke23.com/feed.xml" /> -->
+<link rel="canonical" href="http://localhost:1357/research/">
+<!--<link rel="alternate" type="application/atom+xml" title="Ke YAN's blog" href="http://localhost:1357/feed.xml" /> -->
 
 <!-- sometimes slow
 <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
@@ -169,28 +169,34 @@ p.intro {text-indent:1em; font-size:0.9em}
 </style>
 </header>
 
-<p><em>Preprints:</em></p>
+<p><strong>Deep Lesion Graphs in the Wild: Relationship Learning and Organization of Significant Radiology Image Findings in a Diverse Large-scale Lesion Database</strong> (<a href="https://arxiv.org/abs/1711.10535">arXiv</a>)<br />
+<strong>Ke Yan</strong>, Xiaosong Wang, Le Lu, Ling Zhang, Adam Harrison, Mohammadhadi Bagheri, and Ronald M. Summers<br />
+IEEE CVPR, <span class="type1">2018.6</span>.</p>
+<p class="intro">We develop a large-scale and diverse database of lesions in CT images. A triplet network is proposed to learn lesion embeddings from weak cues for content-based lesion retrieval and intra-patient lesion matching.</p>
+<div align="center"><img title="triplet network for lesion embedding learning" src="/images/research/lesion_triplet_framework.png" width="60%" height="60%" alt="triplet network for lesion embedding learning" /></div>
+<div align="center"><img title="learned lesion embeddings" src="/images/research/lesion_embedding.png" width="60%" height="60%" alt="learned lesion embeddings" /></div>
 
 <hr />
 
-<p><strong>Unsupervised body part regression using convolutional neural network with self-organization</strong> (<a href="https://arxiv.org/abs/1707.03891">arXiv</a>)<br />
-<strong>Ke Yan</strong>, Le Lu, and Ronald M. Summers</p>
+<p><strong>Unsupervised Body Part Regression via Spatially Self-ordering Convolutional Neural Networks</strong> (<a href="https://arxiv.org/abs/1707.03891">arXiv</a>)<br />
+<strong>Ke Yan</strong>, Le Lu, and Ronald M. Summers<br />
+<em>IEEE ISBI</em> (oral), <span class="type1">2018.4</span>.</p>
 <p class="intro">We propose unsupervised body part regressor (UBR), which builds a coordinate system for the body and outputs a continuous score for
 each slice. The score represents the normalized position of the body part in the slice.</p>
 <div align="center"><img title="UBR architecture" src="/images/research/ubr.png" width="40%" height="40%" alt="UBR architecture" /></div>
 
-<p><strong>DeepLesion: Automated Deep Mining, Categorization and Detection of Significant Radiology Image Findings using Large-Scale Clinical Lesion Annotations</strong> (<a href="https://arxiv.org/abs/1710.01766">arXiv</a>)<br />
-<strong>Ke Yan</strong><em>, Xiaosong Wang</em>, Le Lu, and Ronald M. Summers</p>
-<p class="intro">Lesion annotations are mined from PACS. A lesion detection algorithm based on Faster RCNN and an unsupervised categorization framework is proposed.</p>
-<div align="center"><img title="DeepLesion detection results" src="/images/research/deeplesion.png" width="60%" height="60%" alt="DeepLesion detection results" /></div>
 <hr />
 
-<p><em>Published:</em></p>
+<p><strong>DeepLesion: Automated Deep Mining, Categorization and Detection of Significant Radiology Image Findings using Large-Scale Clinical Lesion Annotations</strong> (<a href="https://arxiv.org/abs/1710.01766">arXiv</a>)<br />
+<strong>Ke Yan</strong><em>, Xiaosong Wang</em>, Le Lu, and Ronald M. Summers<br />
+*RSNA (scientific poster), <span class="type1">2017.11</span>.</p>
+<p class="intro">Lesion annotations are mined from PACS. A lesion detection algorithm based on Faster RCNN and an unsupervised categorization framework is proposed.</p>
+<div align="center"><img title="DeepLesion detection results" src="/images/research/deeplesion.png" width="60%" height="60%" alt="DeepLesion detection results" /></div>
 
 <hr />
 
 <p><strong>Learning classification and regression models for data with drift based on transfer samples</strong> (<a href="\papers\preprint_TMTL.pdf">pdf</a>, <a href="/codes/matlab/tmtl.zip">Matlab code</a>)<br />
-<strong>Ke Yan</strong>, David Zhang, and Yong Xu 
+<strong>Ke Yan</strong>, David Zhang, and Yong Xu<br />
 <em>IEEE Trans. on Instrumentation and Measurement</em> (IF = 2.456), <span class="type1">2017</span>.</p>
 <p class="intro">We aim to compensate the two largest influential factors in e-nose applications: instrumental variation and time-varying drift. The transfer-sample-based multitask learning (TMTL) algorithm defines each device or time period as a domain, then learns a prediction model for each domain. Two paradigms, parallel and serial transfer, are designed according to the prior knowledge of the two influential factors. A dynamic model strategy is also proposed to handle continuous sample stream in the MTL framework. <!--In the bottom figure, each circle is a sample; Each Cylinder is a group of transfer samples, which also corresponds to a model; Arrows indicate the model similarity relationships.--></p>
 
