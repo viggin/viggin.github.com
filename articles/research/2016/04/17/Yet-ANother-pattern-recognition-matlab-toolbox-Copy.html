@@ -1,0 +1,612 @@
+<!-- ---
+layout: default
+--- -->
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width initial-scale=1">
+
+<meta property="og:title" content="Yet ANother patter recognition matlab toolbox">
+<title>Yet ANother patter recognition matlab toolbox</title>
+<meta property="og:description" content="Download: Github, MathWorksContentsThe YAN-PRTools matlab toolbox now includes 40 common pattern recognition algorithms:Feature processing  mat2ftvec : Trans...">
+<meta property="og:url" content="http://yanke23.com/articles/research/2016/04/17/Yet-ANother-pattern-recognition-matlab-toolbox-Copy.html">
+<meta property="og:site_name" content="Ke YAN's blog">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@">
+<meta name="twitter:creator" content="@">
+<meta name="twitter:title" content="Yet ANother patter recognition matlab toolbox">
+<meta name="twitter:description" content="Download: Github, MathWorksContentsThe YAN-PRTools matlab toolbox now includes 40 common pattern recognition algorithms:Feature processing  mat2ftvec : Trans...">
+<meta name="twitter:url" content="http://yanke23.com/articles/research/2016/04/17/Yet-ANother-pattern-recognition-matlab-toolbox-Copy.html">
+
+<meta name="keywords" content="research, programming, blog">
+
+<link rel="icon" href="/images/icoyk.png">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="canonical" href="http://yanke23.com/articles/research/2016/04/17/Yet-ANother-pattern-recognition-matlab-toolbox-Copy.html">
+<!--<link rel="alternate" type="application/atom+xml" title="Ke YAN's blog" href="http://yanke23.com/feed.xml" /> -->
+
+<!-- sometimes slow
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+-->
+<!--Google Analytics-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61796294-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+
+
+
+
+<body>
+
+  <div class="container">
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <h1 class="site-title"><a href="/">Ke YAN's blog</a></h1>
+    <h3 class="site-meta">Postdoc @ NIH, US</h3>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+      <div class="trigger">
+	  <!--
+        
+        
+        <a class="page-link" href="/about/">About</a>
+        
+        
+        
+        <a class="page-link" href="/archives/archives.html">Archives</a>
+        
+        
+        
+        <a class="page-link" href="/archives/categories.html">Categories</a>
+        
+        
+        
+        <a class="page-link" href="/programs/cv.html">Programs-CV</a>
+        
+        
+        
+        <a class="page-link" href="/cv/">CV</a>
+        
+        
+        
+        <a class="page-link" href="/guestbook/">Guestbook</a>
+        
+        
+        
+        <a class="page-link" href="/">Home</a>
+        
+        
+        
+        
+        
+        
+        
+        <a class="page-link" href="/programs/ml.html">Programs-ML</a>
+        
+        
+        
+        <a class="page-link" href="/programs/others.html">Programs-Others</a>
+        
+        
+        
+        <a class="page-link" href="/photos/">Photos</a>
+        
+        
+        
+        <a class="page-link" href="/programs/">Programs-Featured</a>
+        
+        
+        
+        <a class="page-link" href="/research/">Research</a>
+        
+        
+        
+        <a class="page-link" href="/archives/tags.html">Tags</a>
+        
+        
+        
+        <a class="page-link" href="/tobedone.html">To be done</a>
+        
+        
+        
+        
+		-->
+		<a class="page-link" href=" /">Home</a>
+		<a class="page-link" href=" /research/">Research</a>
+		<a class="page-link" href=" /programs/">Programs</a>
+		<a class="page-link" href=" /archives/archives.html">Posts</a>
+		<!--<a class="page-link" href=" /photos/">Photos</a>-->
+		<a class="page-link" href=" /about/">About</a>
+		<a class="page-link" href=" /guestbook/">Guestbook</a>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content col-sm-8">
+
+      <!-- above: originally from default.html -->
+
+      <div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+        <header class="post-header">
+          <h1 itemprop="name" class="post-title">Yet ANother patter recognition matlab toolbox</h1>
+          <meta itemprop="keywords" content="pattern recognition,machine learning,matlab,toolbox" />
+          <p class="post-meta">
+            Posted in
+            
+            <a href="/categories/#articles">articles</a>&nbsp;
+            
+            <a href="/categories/#research">research</a>&nbsp;
+             
+            
+            and tagged
+            
+            <a href="/tags/#pattern recognition" title="pattern recognition">pattern recognition </a>, 
+            
+            <a href="/tags/#machine learning" title="machine learning">machine learning </a>, 
+            
+            <a href="/tags/#matlab" title="matlab">matlab </a>, 
+            
+            <a href="/tags/#toolbox" title="toolbox">toolbox </a>
+            
+            
+            <time itemprop="datePublished" datetime="2016-04-17">
+              on Apr 17, 2016
+            </time>
+          </p>
+        </header>
+
+        <article class="post-content" itemprop="articleBody">
+          <p>Download: <a href="https://github.com/viggin/yan-prtools">Github</a>, <a href="http://www.mathworks.com/matlabcentral/fileexchange/56723-yan-prtools">MathWorks</a></p>
+
+<h2><font color="red">Contents</font></h2>
+
+<p>The YAN-PRTools matlab toolbox now includes 40 common pattern recognition algorithms:</p>
+
+<p><strong>Feature processing</strong></p>
+
+<ol>
+  <li><em>mat2ftvec</em> : Transform sample matrices to a feature matrix</li>
+  <li><em>zscore</em> : feature normalization</li>
+  <li><em>pca</em> : PCA</li>
+  <li><em>kpca</em> : KPCA</li>
+  <li><em>lda</em> : LDA</li>
+</ol>
+
+<p><strong>Classification</strong></p>
+
+<ol>
+  <li><em>lr</em> : Logistic regression</li>
+  <li><em>softmax</em> : Softmax</li>
+  <li><em>svm</em> : Wrapper of libsvm</li>
+  <li><em>rf</em> : Random forest</li>
+  <li><em>knn</em> : K nearest neighbors</li>
+  <li><em>gauss</em> : Wrapper of Matlab’s classify function, including methods like naive Bayes, fitting normal density function, Mahalanobis distance, etc.</li>
+  <li><em>boost</em> : AdaBoost with stump weak classifier</li>
+  <li><em>tree</em> : Wrapper of Matlab’s tree classifier</li>
+  <li><em>ann</em> : Wrapper of the artificial neural networks in Matlab</li>
+  <li><em>elm</em> : Basic extreme learning machine</li>
+</ol>
+
+<p><strong>Regression</strong></p>
+
+<ol>
+  <li><em>ridge</em> : Ridge regression</li>
+  <li><em>kridge</em> : Kernel ridge regression</li>
+  <li><em>svr</em> : Wrapper of support vector regression in libsvm</li>
+  <li><em>simplefit</em> : Wrapper to Matlab’s basic fitting functions, inncluding least squares, robust fitting, quadratic fitting, etc.</li>
+  <li><em>lasso</em> : Wrapper of Matlab’s lasso regression</li>
+  <li><em>pls</em> : Wrapper of Matlab’s patial least square regression</li>
+  <li><em>step</em> : Wrapper of Matlab’s stepwisefit</li>
+  <li><em>rf</em> : Random forest</li>
+  <li><em>ann</em> : Wrapper of the artificial neural networks in Matlab</li>
+  <li><em>elm</em> : Basic extreme learning machine</li>
+</ol>
+
+<p><strong>Feature selection</strong></p>
+
+<ol>
+  <li><em>corr</em> : Feature ranking based on correlation coefficients (filter method)</li>
+  <li><em>fisher</em> : Feature ranking using Fisher ratio (filter method)</li>
+  <li><em>mrmr</em> : Feature ranking using minimum redundancy maximal relevance (mRMR) (filter method)</li>
+  <li><em>single</em> : Feature ranking based on each single feature’s prediction accuracy (wrapper method)</li>
+  <li><em>sfs</em> : Feature selection using sequential forward selection (wrapper method)</li>
+  <li><em>ga</em> : Feature selection using the genetic algorithm in Matlab (wrapper method)</li>
+  <li><em>rf</em> : Feature ranking using random forest (embedded method)</li>
+  <li><em>stepwisefit</em> : Feature selection based on stepwise fitting (embedded method)</li>
+  <li><em>boost</em> : Feature selection using AdaBoost with the stump weak learner (embedded method)</li>
+  <li><em>svmrfe_ori</em> : Feature ranking using SVM-recursive feature elimination (SVM-RFE), the original linear version (embedded method)</li>
+  <li><em>svmrfe_ker</em> : Feature ranking using the kernel version of SVM-RFE (embedded method)</li>
+</ol>
+
+<p><strong>Representative sample selection (active learning)</strong></p>
+
+<ol>
+  <li><em>cluster</em> : Sample selection based on cluster centers</li>
+  <li><em>ted</em> : Transductive experimental design</li>
+  <li><em>llr</em> : Locally linear reconstruction</li>
+  <li><em>ks</em> : Kennard-Stone algorithm</li>
+</ol>
+
+<p><br /></p>
+<h2><font color="orange">Interfaces</font></h2>
+
+<p><strong>Feature processing</strong></p>
+
+<pre><code>[Xnew, model] = ftProc_xxx_tr(X,Y,param) % training
+Xnew = ftProc_xxx_te(model,X) % test
+</code></pre>
+
+<p><strong>Classification</strong></p>
+
+<pre><code>model = classf_xxx_tr(X,Y,param) % training
+[pred,prob] = classf_xxx_te(model,Xtest) % test, return the predicted labels and probabilities (optional)
+</code></pre>
+
+<p><strong>Regression</strong></p>
+
+<pre><code>model = regress_xxx_tr(X,Y,param) % training
+rv = regress_xxx_te(model,Xtest) % test, return the predicted values
+</code></pre>
+
+<p><strong>Feature selection</strong></p>
+
+<pre><code>[ftRank,ftScore] = ftSel_xxx(ft,target,param) % return the feature rank (or subset) and scores (optional)
+</code></pre>
+
+<p><strong>Representative sample selection (active learning)</strong></p>
+
+<pre><code>smpList = smpSel_xxx(X,nSel,param) % return the indices of the selected samples
+</code></pre>
+
+<p>Please see test.m for sample usages.</p>
+
+<p>Besides, there are three uniform wrappers: ftProc_, classf_, regress_. They accept algorithm name strings as inputs and combine the training and test phase.</p>
+
+<p><br /></p>
+<h2><font color="green">Characteristics</font></h2>
+
+<ul>
+  <li>The training (tr) and test (te) phases are split for feature processing, classification and regression to allow more flexible use. For example, one trained model can be applied multiple times.</li>
+  <li>The struct “param” is used to pass parameters to algorithms.</li>
+  <li>Default parameters are set clearly at the top of the code, along with the explainations.</li>
+</ul>
+
+<p>In brief, I aimed at three main objectives when developing this toolbox:</p>
+
+<ul>
+  <li>Unified and simple interface;</li>
+  <li>Convenient to observe and change algorithm parameters, avoiding tedious parameter setting and checking;</li>
+  <li>Extensibile. Simple file structures makes it easier to modify the algorithms.</li>
+</ul>
+
+<p><br /></p>
+<h2><font color="blue">Dependencies</font></h2>
+
+<p>In the toolbox, 20 algorithms are self-implemented, 11 are wrappers or mainly based on Matlab functions, and 9 are wrappers or mainly based on 3rd party toolboxes, which are listed below. They are included in the project, however, you may need to recompile some of them depending on your computer platform.</p>
+
+<ul>
+  <li>SVM and SVR: Chih-Chung Chang and Chih-Jen Lin, libsvm (this toolbox is so famous that you only need to google it)</li>
+  <li>RF: Abhishek Jaiantilal, <a href="">https://code.google.com/p/randomforest-matlab/</a></li>
+  <li>ELM: Qin-Yu Zhu and Guang-Bin Huang, <a href="">http://www.ntu.edu.sg/home/egbhuang/elm_random_hidden_nodes.html</a></li>
+  <li>mRMR: Hanchuan Peng, <a href="">http://www.mathworks.com/matlabcentral/fileexchange/?term=authorid%3A27911</a></li>
+  <li>TED: Kai Yu, Jinbo Bi, and Volker Tresp, <a href="">http://www.dbs.ifi.lmu.de/~yu_k/ted/</a></li>
+</ul>
+
+<p>Thanks to the authors and MathWorks Inc.! I know that there is so many important algorithms not contained in the toolbox, so everybody is welcomed to contribute new codes! Also, if you find any bug in the codes, please don’t hesitate to let me know!</p>
+
+<p>Ke YAN, 2016, Tsinghua Univ. http://yanke23.com, xjed09@gmail.com</p>
+
+        </article>
+        <hr />
+      </div>
+
+
+      <section class="pager">
+  <ul>
+    
+    <li class="previous"><a href="/articles/research/2016/04/17/A-domain-adaptation-matlab-toolbox.html" title="A domain adaptation matlab toolbox">&larr; Older</a></li>
+    
+    
+    <li class="next"><a href="/articles/research/2018/06/13/DeepLesion-dataset-CVPR-2018.html" title="DeepLesion: a large-scale and diverse CT lesion dataset">Newer &rarr;</a></li>
+    
+  </ul>
+</section>
+
+      
+      <div id="disqus_thread"></div>
+
+<script type="text/javascript">
+
+  var disqus_developer = 1;
+
+var disqus_shortname ='yanke23';
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+      
+
+      <!-- below: originally from default.html -->
+
+      <section class="pager">
+  
+  
+</section>
+
+
+    </div>
+    <div class="col-sm-2">
+<div class="sidebar-module about">
+  <h4>About Me</h4>
+  <img title="YAN Ke" src="/images/aboutme.jpg" alt="YAN Ke"/>
+  <span>Please contact me via</span>
+  <br />
+
+  
+
+<ul>
+<li> <!--<a href="mailto:yankethu &lt;at&gt; foxmail.com" title="mailto: yankethu &lt;at&gt; foxmail.com">Email</a>--> yankethu &lt;at&gt; foxmail.com </li>
+  
+  <!--
+  <a href="https://twitter.com/" title="TwitterID: ">Twitter</a>
+   -->
+ 
+<li> <a href="https://github.com/viggin" title="GithubID: viggin">Github</a> </li>
+   
+<li> <a href="https://cn.mathworks.com/matlabcentral/fileexchange/index?term=authorid%3A108525" title="MathworksID: 2503880-edward-wiggin">Matlab Center</a> </li>
+  
+<li> <a href="https://www.instagram.com/yankethu/" title="MathworksID: yankethu">Instagram</a> </li>
+
+<li> <a href="http://download.csdn.net/user/viggin/uploads" title="CSDNID: viggin">CSDN</a> </li>
+
+<li> <a href="http://weibo.com/u/2619635890" title="WeiboID: 2619635890">微博</a> </li>
+</ul>
+  
+
+</div>
+
+<div class="sidebar-module">
+	<h4>Recent Posts</h4>
+	
+		
+			<li>
+				<a href=" /articles/research/2018/06/13/DeepLesion-dataset-CVPR-2018.html" title="DeepLesion: a large-scale and diverse CT lesion dataset" rel="bookmark">DeepLesion: a large-scale and diverse CT lesion dataset</a>
+			</li>
+		
+	
+		
+			<li>
+				<a href=" /articles/research/2016/04/17/Yet-ANother-pattern-recognition-matlab-toolbox-Copy.html" title="Yet ANother patter recognition matlab toolbox" rel="bookmark">Yet ANother patter recognition matlab toolbox</a>
+			</li>
+		
+	
+		
+			<li>
+				<a href=" /articles/research/2016/04/17/A-domain-adaptation-matlab-toolbox.html" title="A domain adaptation matlab toolbox" rel="bookmark">A domain adaptation matlab toolbox</a>
+			</li>
+		
+	
+		
+			<li>
+				<a href=" /articles/web/2016/04/17/change-url-and-host.html" title="域名变动，网站迁移到coding.net" rel="bookmark">域名变动，网站迁移到coding.net</a>
+			</li>
+		
+	
+		
+			<li>
+				<a href=" /articles/software/2015/04/26/word-numbering.html" title="Word自动编号解决方案：引文、图表、公式" rel="bookmark">Word自动编号解决方案：引文、图表、公式</a>
+			</li>
+		
+	
+		
+			<li>
+				<a href=" /articles/software/2015/04/11/Foxit-reader-close-file-bug.html" title="Foxit pdf阅读器不及时释放文件的bug解决" rel="bookmark">Foxit pdf阅读器不及时释放文件的bug解决</a>
+			</li>
+		
+	
+		
+			<li>
+				<a href=" /articles/web/2015/04/08/yanke23-how-to-build.html" title="yanke23建站简记" rel="bookmark">yanke23建站简记</a>
+			</li>
+		
+	
+</div>
+
+
+<div class="sidebar-module">
+	<h4>Categories</h4>
+	
+		
+			<li><a href="/archives/categories.html#articles" title="articles" rel="8">articles (8)</a></li>
+		
+	
+		
+			<li><a href="/archives/categories.html#web" title="web" rel="3">web (3)</a></li>
+		
+	
+		
+			<li><a href="/archives/categories.html#software" title="software" rel="2">software (2)</a></li>
+		
+	
+		
+			<li><a href="/archives/categories.html#research" title="research" rel="3">research (3)</a></li>
+		
+	
+</div>
+
+
+<div class="sidebar-module">
+  <h4>Tags</h4>
+  
+    <a href="/tags/#编程" title="编程" rel="1">编程</a> &nbsp;
+  
+    <a href="/tags/#git" title="git" rel="2">git</a> &nbsp;
+  
+    <a href="/tags/#网站" title="网站" rel="2">网站</a> &nbsp;
+  
+    <a href="/tags/#Jekyll" title="Jekyll" rel="1">Jekyll</a> &nbsp;
+  
+    <a href="/tags/#markdown" title="markdown" rel="1">markdown</a> &nbsp;
+  
+    <a href="/tags/#html" title="html" rel="1">html</a> &nbsp;
+  
+    <a href="/tags/#css" title="css" rel="1">css</a> &nbsp;
+  
+    <a href="/tags/#福昕" title="福昕" rel="1">福昕</a> &nbsp;
+  
+    <a href="/tags/#Foxit" title="Foxit" rel="1">Foxit</a> &nbsp;
+  
+    <a href="/tags/#pdf阅读器" title="pdf阅读器" rel="1">pdf阅读器</a> &nbsp;
+  
+    <a href="/tags/#bug" title="bug" rel="1">bug</a> &nbsp;
+  
+    <a href="/tags/#Word" title="Word" rel="1">Word</a> &nbsp;
+  
+    <a href="/tags/#编号" title="编号" rel="1">编号</a> &nbsp;
+  
+    <a href="/tags/#引用" title="引用" rel="1">引用</a> &nbsp;
+  
+    <a href="/tags/#coding.net" title="coding.net" rel="1">coding.net</a> &nbsp;
+  
+    <a href="/tags/#gitcafe" title="gitcafe" rel="1">gitcafe</a> &nbsp;
+  
+    <a href="/tags/#域名" title="域名" rel="1">域名</a> &nbsp;
+  
+    <a href="/tags/#domain adaptation" title="domain adaptation" rel="1">domain adaptation</a> &nbsp;
+  
+    <a href="/tags/#transfer learning" title="transfer learning" rel="1">transfer learning</a> &nbsp;
+  
+    <a href="/tags/#matlab" title="matlab" rel="2">matlab</a> &nbsp;
+  
+    <a href="/tags/#toolbox" title="toolbox" rel="2">toolbox</a> &nbsp;
+  
+    <a href="/tags/#pattern recognition" title="pattern recognition" rel="1">pattern recognition</a> &nbsp;
+  
+    <a href="/tags/#machine learning" title="machine learning" rel="1">machine learning</a> &nbsp;
+  
+    <a href="/tags/#medical image analysis" title="medical image analysis" rel="1">medical image analysis</a> &nbsp;
+  
+    <a href="/tags/#deep learning" title="deep learning" rel="1">deep learning</a> &nbsp;
+  
+    <a href="/tags/#dataset" title="dataset" rel="1">dataset</a> &nbsp;
+  
+    <a href="/tags/#computer vision" title="computer vision" rel="1">computer vision</a> &nbsp;
+  
+</div>
+
+
+<div class="sidebar-module">
+  <h4>Blogroll</h4>
+  
+  <li><a href="http://yulijia.net/freshman21" title="Another Jekyll blog theme">Freshman21</a></li>
+  
+  <li><a href="http://www4.comp.polyu.edu.hk/~csdzhang/" title="Prof. David Zhang">Prof. David Zhang</a></li>
+  
+  <li><a href="http://www.quxiaofeng.me/" title="Xiaofeng Qu">多才多艺的师兄</a></li>
+  
+  <li><a href="http://www.leizhang.tk/" title="Lei Zhang">学术牛人师兄</a></li>
+  
+</div>
+
+
+<div class="sidebar-module">
+  <h4>Archives</h4>
+
+  
+  
+  
+  
+  
+  <li id="2018" > <a href="/archives/#2018">2018</a></li>
+  
+  
+  
+  
+  
+  
+  <li id="2016" > <a href="/archives/#2016">2016</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li id="2015" > <a href="/archives/#2015">2015</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+</div>
+
+
+</div>
+
+
+
+    <footer class="site-footer">
+
+  <p>Copyright &copy; <a href="/">Ke YAN's blog</a></p>
+  <p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a> 
+  on 
+  
+  <a href="https://github.com/">Github</a>
+  
+  | Theme <a href="https://github.com/yulijia/freshman21/">Freshman21</a> Design by <a href="http://yulijia.net">Lijia Yu</a>  
+
+</footer>
+
+
+  </div>
+
+</body>
+
+</html>
