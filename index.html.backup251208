@@ -1,0 +1,394 @@
+<!-- ---
+layout: default
+--- -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width initial-scale=1">
+
+<meta property="og:title" content="Ke YAN">
+<title>Ke YAN</title>
+<meta property="og:description" content="A personal website.">
+<meta property="og:url" content="http://localhost:1357/.backup251208">
+<meta property="og:site_name" content="Ke YAN">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@">
+<meta name="twitter:creator" content="@">
+<meta name="twitter:title" content="Ke YAN">
+<meta name="twitter:description" content="A personal website.">
+<meta name="twitter:url" content="http://localhost:1357/.backup251208">
+
+<meta name="keywords" content="research, programming, blog">
+
+<link rel="icon" href="/images/icoyk.png">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="canonical" href="http://localhost:1357/.backup251208">
+<!--<link rel="alternate" type="application/atom+xml" title="Ke YAN" href="http://localhost:1357/feed.xml" /> -->
+
+<!-- sometimes slow
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+-->
+<!--Google Analytics-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61796294-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+
+
+
+
+<body>
+
+	<div class="container">
+
+		<header class="site-header">
+
+  <div class="wrapper">
+
+    <h1 class="site-title"><a href="/">Ke YAN</a></h1>
+    <h3 class="site-meta">AI researcher</h3>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+      <div class="trigger">
+	  <!--
+        
+        
+        <a class="page-link" href="/about/">About</a>
+        
+        
+        
+        <a class="page-link" href="/archives/archives.html">Archives</a>
+        
+        
+        
+        <a class="page-link" href="/archives/categories.html">Categories</a>
+        
+        
+        
+        <a class="page-link" href="/programs/cv.html">Programs-CV</a>
+        
+        
+        
+        <a class="page-link" href="/cv/">CV</a>
+        
+        
+        
+        <a class="page-link" href="/guestbook/">Guestbook</a>
+        
+        
+        
+        <a class="page-link" href="/">Home</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a class="page-link" href="/programs/ml.html">Programs-ML</a>
+        
+        
+        
+        <a class="page-link" href="/programs/others.html">Programs-Others</a>
+        
+        
+        
+        <a class="page-link" href="/photos/">Photos</a>
+        
+        
+        
+        <a class="page-link" href="/programs/">Programs-Featured</a>
+        
+        
+        
+        <a class="page-link" href="/research/">Research</a>
+        
+        
+        
+        <a class="page-link" href="/archives/tags.html">Tags</a>
+        
+        
+        
+        <a class="page-link" href="/tobedone.html">To be done</a>
+        
+        
+        
+        
+		-->
+		<a class="page-link" href=" /">Home</a>
+		<a class="page-link" href=" /research/">Research</a>
+		<a class="page-link" href=" /programs/">Programs</a>
+		<a class="page-link" href=" /archives/archives.html">Posts</a>
+		<!--<a class="page-link" href=" /photos/">Photos</a>-->
+		<a class="page-link" href=" /about/">About</a>
+		<a class="page-link" href=" /guestbook/">Guestbook</a>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+		<div class="page-content">
+			<div class="wrapper">
+				
+				<!-- above: originally from default.html -->
+
+				<div class="post">
+
+				<!--   <header class="post-header">
+				    <h1 class="post-title"></h1>
+				</header> -->
+
+				<article class="post-content"> 
+					<header class="post-header">
+<style type="text/css">
+p.cvitem {font-size:1.5em; font-family:"Times New Roman"; font-weight:bold; text-indent:0cm}
+p.cvcontent {text-indent:1em;}
+</style>
+</header>
+
+
+<img src="\images\me.jpg" alt="Ke's pic" width="100"/> 
+<p class="cvitem"> About me </p>
+
+<p class="cvcontent">Hi! I am Ke YAN, a Staff Algorithm Engineer at Alibaba DAMO Academy, Beijing, China.</p>
+<p class="cvcontent">From 2019 to 2021, I was a Senior Research Scientist at <a href="http://www.paii-labs.com/index">PAII Inc.</a> (Ping An AI Institute), Bethesda, US.</p>
+<p class="cvcontent">Before that, I was a postdoc researcher in National Institutes of Health, US, mentored <a href="https://clinicalcenter.nih.gov/about/SeniorStaff/ronald_summers.html">Dr. Ronald Summers</a> and <a href="http://www.cs.jhu.edu/~lelu/">Dr. Le Lu</a>.</p>
+<p class="cvcontent">I came from from Beijing, China. I got my Ph.D. and BS degrees both from Dept. Electronic Engineering, Tsinghua University, China. My advisor is <a href="http://www4.comp.polyu.edu.hk/~csdzhang/"> Prof. David Zhang</a>.</p>
+<p class="cvcontent">My research interests include computer vision, madical image analysis, deep learning, and machine learning.</p>
+
+<p class="cvcontent">E-mail: <font color="blue">yankethu &lt;at&gt; gmail.com</font></p>
+<p class="cvcontent">My CV is <a href="/files/Ke Yan - CV.pdf">here</a>.</p>
+
+<style>
+.scroll {   
+height: 200px;   
+width: 300px;   
+overflow: auto;   
+border: 1px solid #666;   
+background-color: #ccc;   
+padding: 8px;   
+}
+</style>
+<p class="cvitem"> News </p>
+<div style="height:200px; overflow:auto;">
+<ul>
+<li> [2022.06.29] Two papers accepted by MICCAI 2022; 5 abstracts accepted by RSNA 2022, 4 orals. Congrats to Dr. Zhou Zhuping, Dazhou, and Jiawen!
+<li> [2021.08.20] I was awarded as one of the Top 10 Sharers/Speakers in Ping An Technology, 2021.
+<li> [2021.07.19] Six abstracts accepted by RSNA 2021, 4 orals. Congrats to Lianyan, Fengze, Youbao, Jimmy, and Bowen!
+<li> [2020.07.10] Invited talk on <a href="https://www.bilibili.com/video/BV1Rg411j7Mu?p=12">Medical Imaging Computing Seminar (MICS)</a> (in Chinese).
+<li> [2021.06.22] Five papers accepted by MICCAI 2021.
+<li> [2021.02.28] One paper accepted by CVPR 2021. Congratulations to Jimmy! I am also an Outstanding Reviewer.
+<li> [2020.12.18] One paper accepted by TMI.
+<li> [2020.06.22] Five abstracts accepted by RSNA 2020, one Featured Paper.
+<li> [2020.06.22] Five papers accepted by MICCAI 2020.
+<li> [2020.05.20] Invited talk on <a href="http://valser.org/article-366-1.html">VALSE</a> (in Chinese).
+<li> [2019.07.19] Three abstracts accepted by RSNA 2019, all are oral presentation.
+<li> [2019.06.29] One paper accepted by MICCAI 2019.
+<li> [2019.04.26] We released the semantic labels of the DeepLesion dataset <a href="https://github.com/rsummers11/CADLab/tree/master/LesaNet">here</a>.
+<li> [2019.03.02] My paper entered the <a href="https://biomedicalimaging.org/2019/isbi-2019-awards/">best paper award finalist</a> of ISBI 2019.
+<li> [2019.03.02] One paper accepted by 2019 Conference on Computer Vision and Pattern Recognition (CVPR), oral presentation.
+<li> [2019.03.01] Two papers accepted by 2019 IEEE 16th International Symposium on Biomedical Imaging (ISBI), one oral.
+<li> [2018.09.17] I received the RSNA Trainee Research Prize with our submission "Relationship Learning and Organization of Significant Radiology Image Findings for Lesion Retrieval and Matching".
+<li> [2018.09.16] Invited talk at the MICCAI 2018 Workshop of <a href="https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=37224869">Computational Precision Medicine</a> in Granada, Spain.
+<li> [2018.09.13] Invited talk at the <a href="https://researchfestival.nih.gov/2018">NIH Research Festival</a>, Symposium on Computational Biology, Data Science, and Machine Learning.
+<li> [2018.07.20] The DeepLesion dataset was released. Multi-category dataset of 32K lesions on CT images. (<a href="/articles/research/2018/06/13/DeepLesion-dataset-CVPR-2018.html">Details</a>)
+<li> [2018.07.20] Our work of DeepLesion was reported by <a href="https://www.nih.gov/news-events/news-releases/nih-clinical-center-releases-dataset-32000-ct-images">NIH</a>, <a href="http://spie.org/about-spie/press-room/press-releases/spie-journal-of-medical-imaging-announces-public-availability-of-largest-multi-lesion-medical-imaging-dataset">SPIE</a>, <a href="https://www.auntminnie.com/index.aspx?sec=log&itemID=121354">AuntMinnie</a>, and other news websites.
+<li> [2018.06.23] I was invited to give a talk at the <a href="https://sites.google.com/site/cvprmcv18/">Medical Computer Vision and Health Informatics Workshop </a> of CVPR 2018 at Salt Lake City, US. (<a href="/files/LesionGraph_workshop_online.pptx">slides</a>)
+<li> [2018.04.06] Our paper "Unsupervised Body Part Regression via Spatially Self-ordering Convolutional Neural Networks" was featured in the RSIP Vision and ISBI Daily in coorperation with Computer Vision News. (<a href="https://www.rsipvision.com/ISBI2018-Friday/">link</a>)
+</ul>
+</div>
+
+</br>
+<p class="cvitem"> Recent Papers </p>
+<!--<a href="/research/">Details</a> &nbsp; &nbsp; --><a href="https://scholar.google.com.hk/citations?user=TVGx4KgAAAAJ">Google Scholar</a><br/>
+
+Conferences:
+
+<ol> 
+<li> Ke Yan, Xiaoli Yin, Yingda Xia, Fakai Wang, Shu Wang, Yuan Gao, Jiawen Yao, Chunli Li, Xiaoyu Bai, Jingren Zhou, Ling Zhang, Le Lu, Yu Shi, "<b>Liver Tumor Screening and Diagnosis in CT with Pixel-Lesion-Patient Network</b>," MICCAI, 2023 (<a href="https://arxiv.org/abs/2307.08268">arXiv</a>, <a href="https://github.com/alibaba-damo-academy/pixel-lesion-patient-network">code</a>)
+<li> Ke Yan, Dakai Jin, Dazhou Guo, Minfeng Xu, Na Shen,Xian-Sheng Hua, Xianghua Ye, Le Lu, "<b>Anatomy-Aware Lymph Node Detection in Chest CT using Implicit Station Stratification</b>", International Workshop on Multiscale Multimodal Medical Imaging (MMMI), 2023 (<a href="https://arxiv.org/abs/2307.15271">arXiv</a>)
+<li> Fan Bai, Ke Yan, Xiaoyu Bai, Xinyu Mao, Xiaoli Yin, Jingren Zhou, Yu Shi, Le Lu, Max Q.-H. Meng, "<b>SLPT: Selective Labeling Meets Prompt Tuning on Data-Limited Lesion Segmentation</b>," MICCAI, 2023 (<a href="https://arxiv.org/abs/2308.04911">arXiv</a>)
+<li> Zi Li, Lin Tian, Tony C. W. Mok, Xiaoyu Bai, Puyang Wang, Jia Ge, Jingren Zhou, Le Lu, Xianghua Ye, Ke Yan, Dakai Jin, "<b>SAMConvex: Fast Discrete Optimization for CT Registration using Self-supervised Anatomical Embedding and Correlation Pyramid</b>," MICCAI, 2023 (<a href="https://arxiv.org/abs/2307.09727">arXiv</a>)
+<li> Mingze Yuan, Yingda Xia, Hexin Dong, Zifan Chen, Jiawen Yao, Mingyan Qiu, Ke Yan, Xiaoli Yin, Yu Shi, Xin Chen, Zaiyi Liu, Bin Dong, Jingren Zhou, Le Lu, Ling Zhang, Li Zhang, "<b>Devil is in the Queries: Advancing Mask Transformers for Real-world Medical Image Segmentation and Out-of-Distribution Localization</b>," CVPR, 2023 (Highlight) (<a href="https://arxiv.org/abs/2308.04911https://openaccess.thecvf.com/content/CVPR2023/papers/Yuan_Devil_Is_in_the_Queries_Advancing_Mask_Transformers_for_Real-World_CVPR_2023_paper.pdf">paper</a>)
+<li> Zhanghexuan Ji, Dazhou Guo, Puyang Wang, Ke Yan, Le Lu, Minfeng Xu, Jingren Zhou, Qifeng Wang, Jia Ge, Mingchen Gao, Xianghua Ye, Dakai Jin, "<b>Continual Segment: Towards a Single, Unified and Accessible Continual Segmentation Model of 143 Whole-body Organs in CT Scans</b>," ICCV, 2023 (<a href="https://arxiv.org/abs/2302.00162">arXiv</a>)
+<li> Jieneng Chen, Yingda Xia, Jiawen Yao, Ke Yan, Jianpeng Zhang, Le Lu, Fakai Wang, Bo Zhou, Mingyan Qiu, Qihang Yu, Mingze Yuan, Wei Fang, Yuxing Tang, Minfeng Xu, Jian Zhou, Yuqian Zhao, Qifeng Wang, Xianghua Ye, Xiaoli Yin, Yu Shi, Xin Chen, Jingren Zhou, Alan Yuille, Zaiyi Liu, Ling Zhang. "<b>CancerUniT: Towards a Single Unified Model for Effective Detection, Segmentation, and Diagnosis of Eight Major Cancers Using a Large Collection of CT Scans</b>", ICCV, 2023 (<a href="https://arxiv.org/abs/2301.12291">arXiv</a>)
+<li> Yankai Jiang, Mingze Sun, Heng Guo, Ke Yan, Le Lu, Minfeng Xu, "<b>Anatomical Invariance Modeling and Semantic Alignment for Self-supervised Learning in 3D Medical Image Segmentation</b>", ICCV (oral), 2023 (<a href="https://arxiv.org/abs/2302.05615">arXiv</a>)
+<li> Dazhou Guo, Jia Ge, Ke Yan, Puyang Wang, Zhuotun Zhu, Dandan Zheng, Xian-Sheng Hua, Le Lu, Tsung-Ying Ho, Xianghua Ye, Dakai Jin, "<b>Thoracic Lymph Node Segmentation in CT imaging via Lymph Node Station Stratification and Size Encoding</b>," MICCAI, 2022
+<li> Jiawen Yao, Xianghua Ye, Yingda Xia, Jian Zhou, Yu Shi, Ke Yan, Fang Wang, Lisha Lin, Haogang Yu, Xian-Sheng Hua, Le Lu, Dakai Jin, Ling Zhang, "<b>Effective Opportunistic Esophageal Cancer Screening using Noncontrast CT Imaging</b>," MICCAI, 2022 (early accept)
+<li> Ke Yan, Youbao Tang, Adam Harrison, Jinzheng Cai, Le Lu, Jingjing Lu, "<b>Interpretable Medical Image Classification with Self-Supervised Anatomical Embedding and Prior Knowledge</b>," MIDL (short paper), 2021 (<a href="https://openreview.net/forum?id=0wblcjbC2sN">OpenReview</a>). 
+<li> Jinzheng Cai, Youbao Tang, Ke Yan, Adam P. Harrison, Jing Xiao, Gigin Lin, Le Lu, "<b>Deep Lesion Tracker: Monitoring Lesions in 4D Longitudinal Imaging Studies</b>," CVPR, 2021 (<a href="https://arxiv.org/abs/2012.04872v2">arXiv</a>)
+<li> Fengze Liu*, Ke Yan*, Adam Harrison, Dazhou Guo, Le Lu, Alan Yuille, Lingyun Huang, Guotong Xie, Jing Xiao, Xianghua Ye, Dakai Jin, “<b>SAME: Deformable Image Registration based on Self-supervised Anatomical Embeddings</b>," MICCAI, 2021 (<a href="https://arxiv.org/abs/2109.11572">arXiv</a>).
+<li> Youbao Tang, Ke Yan, Jinzheng Cai, Lingyun Huang, Guotong Xie, Jing Xiao, Jingjing Lu, Gigin Lin, Le Lu, “<b>Lesion Segmentation and RECIST Diameter Prediction via Click-driven Attention and Dual-path Connection</b>," MICCAI, 2021 (<a href="https://arxiv.org/abs/2105.01828">arXiv</a>).
+<li> Jie-Neng Chen, Ke Yan, Yudong Zhang, Youbao Tang, Xun Xu, Qiuping Liu, Shuwen Sun, Lingyun Huang, Jing Xiao, Alan Yuille, Ya Zhang, Le Lu, “<b>Sequential Learning on Liver Tumor Boundary Semantics and Prognostic Biomarker Mining</b>," MICCAI, 2021 (Student Travel Award) (<a href="https://arxiv.org/abs/2103.05170">arXiv</a>).
+<li> Bowen Li, Xinping Ren, Ke Yan, Le Lu, Lingyun Huang, Guotong Xie, Jing Xiao, Dar‐In Tai, Adam Harrison, “<b>Learning from Subjective Ratings Using Auto-Decoded Deep Latent Embeddings</b>," MICCAI, 2021 (oral, <a href="https://arxiv.org/abs/2104.05570">arXiv</a>).
+<li> Youbao Tang, Jinzheng Cai, Ke Yan, Lingyun Huang, Guotong Xie, Jing Xiao, Jingjing Lu, Gigin Lin, Le Lu, “<b>Weakly-Supervised Universal Lesion Segmentation with Regional Level Set Loss</b>," MICCAI, 2021 (Student Travel Award) (<a href="https://arxiv.org/abs/2105.01218">arXiv</a>).
+<li> Bowen Li, Ke Yan, Dar-In Tai, Yuankai Huo, Le Lu, Jing Xiao, Adam Harrison, "<b>Reliable Liver Fibrosis Assessment from Ultrasound using Global Hetero-Image Fusion and View-Specific Parameterization</b>," MICCAI, 2020 (<a href="https://arxiv.org/abs/2008.03352">arXiv</a>)
+<li> Jinzheng Cai, Ke Yan, Chi Tung Cheng, Jing Xiao, ChienHung Liao, Le Lu, Adam Harrison, "<b>Deep Volumetric Universal Lesion Detection using Light-Weight Pseudo 3D Convolution and Surface Point Regression</b>," MICCAI, 2020 (<a href="https://arxiv.org/abs/2008.13254">arXiv</a>)
+<li>Youbao Tang, Ke Yan, Jing Xiao, Ronald M.\ Summers, "<b>One Click Lesion RECIST Measurement and Segmentation on CT Scans</b>," MICCAI, 2020 (<a href="https://arxiv.org/abs/2007.11087">arXiv</a>)
+<li>Zhuotun Zhu, Dakai Jin, Ke Yan, Tsung-Ying Ho, Xianghua Ye, Dazhou Guo, Chun-Hung Chao, Jing Xiao, Alan Yuille, Le Lu,"<b>Lymph Node Gross Tumor Volume Detection and Segmentation via Distance-based Gating using 3D CT/PET Imaging in Radiotherapy</b>," MICCAI, 2020 (NIH Award) (<a href="https://arxiv.org/abs/2008.11870">arXiv</a>)
+<li>Chun-Hung Chao, Zhuotun Zhu, Ke Yan, Dazhou Guo, Tsung-Ying Ho, Jinzheng Cai, Adam Harrison, Xianghua Ye, Jing Xiao, Alan Yuille, Min Sun, Le Lu, "<b>Lymph Node Gross Tumor Volume Detection in Oncology Imaging via Relationship Learning Using Graph Neural Network</b>," MICCAI, 2020 (<a href="https://arxiv.org/abs/2008.13013">arXiv</a>)
+<li> Ke Yan, Youbao Tang, Yifan Peng, Veit Sandfort, Mohammadhadi Bagheri, Zhiyong Lu, Ronald M. Summers, "<b>MULAN: Multitask Universal Lesion Analysis Network for Joint Lesion Detection, Tagging, and Segmentation</b>," MICCAI, 2019 (<a href="https://arxiv.org/abs/1908.04373">arXiv</a>, <a href="https://github.com/rsummers11/CADLab/tree/master/MULAN_universal_lesion_analysis">code+model</a>).
+<li> Ke Yan, Yifan Peng, Veit Sandfort, Mohammadhadi Bagheri, Zhiyong Lu, Ronald M. Summers, "<b>Holistic and Comprehensive Annotation of Clinically Significant Findings on Diverse CT Images: Learning from Radiology Reports and Label Ontology</b>," CVPR, 2019, oral presentation (<a href="https://arxiv.org/abs/1904.04661">arXiv</a>, <a href="https://github.com/rsummers11/CADLab/tree/master/LesaNet">code+label</a>).
+<li> Yifan Peng, Ke Yan, Veit Sandfort, Ronald M. Summers, Zhiyong Lu, "<b>A self-attention based deep learning method for lesion attribute detection from CT reports</b>," IEEE International Conference on Healthcare Informatics (ICHI), 2019 (<a href="https://arxiv.org/abs/1904.13018">arXiv</a>).
+<li> Ke Yan, Yifan Peng, Zhiyong Lu, Ronald M. Summers, "<b>Fine-Grained Lesion Annotation in CT Images with Knowledge Mined from Radiology Reports</b>," IEEE International Symposium on Biomedical Imaging (ISBI), 2019, oral presentation (best paper award finalist) (<a href="https://arxiv.org/abs/1903.01505">arXiv</a>).
+<li> Youbao Tang, <u>Ke Yan</u>*, Yuxing Tang*, Jiamin Liu*, Jing Xiao, Ronald M. Summers, "<b>ULDor: A Universal Lesion Detector for CT Scans with Pseudo Masks and Hard Negative Example Mining</b>," ISBI, 2019 (<a href="https://arxiv.org/abs/1901.06359">arXiv</a>).
+<li> Ke Yan, Mohammadhadi Bagheri, Ronald M. Summers, "<b>3D Context Enhanced Region-based Convolutional Neural Network for End-to-End Lesion Detection</b>," International Conference on Medical Image Computing & Computer Assisted Intervention (MICCAI), Granada, Spain, 2018 (<a href="https://arxiv.org/abs/1806.09648">arXiv</a>, <a href="https://github.com/rsummers11/CADLab/tree/master/lesion_detector_3DCE">code</a>)
+<li> Jinzheng Cai*, Youbao Tang*, Le Lu, Adam P. Harrison, <u>Ke Yan</u>, Jing Xiao, Lin Yang, Ronald M. Summers, "<b>Accurate Weakly-Supervised Deep Lesion Segmentation using Large-Scale Clinical Annotations: Slice-Propagated 3D Mask Generation from 2D RECIST</b>," MICCAI, 2018 (<a href="https://arxiv.org/abs/1801.08614">arXiv</a>)
+<li> Ke Yan, Xiaosong Wang, Le Lu, Ling Zhang, Mohammadhadi Bagheri, Ronald M. Summers, "<b>DeepLesion: a Diverse and Large-scale Database of
+Significant Radiology Image Findings</b>," MICCAI workshop-Large-scale Annotation of Biomedical Data and Expert Label Synthesis (LABELS), 2018.
+<li> Youbao Tang*, Jinzheng Cai*, Le Lu, Adam P. Harrison, Ke Yan, Jing Xiao, Lin Yang, Ronald M. Summers, "<b>CT Image Enhancement Using Stacked Generative Adversarial Networks and Transfer Learning for Lesion Segmentation Improvement</b>," MICCAI workshop-International Conference on Machine Learning in Medical Imaging (MLMI), 2018 (<a href="https://arxiv.org/abs/1807.07144">arXiv</a>)
+<li> Ke Yan, Xiaosong Wang, Le Lu, Ling Zhang, Adam Harrison, Mohammadhadi Bagheri, Ronald M. Summers, "<b>Deep Lesion Graphs in the Wild: Relationship Learning and Organization of Significant Radiology Image Findings in a Diverse Large-scale Lesion Database</b>," IEEE CVPR, 2018 (<a href="https://arxiv.org/abs/1711.10535">arXiv</a>, <a href="/articles/research/2018/06/13/DeepLesion-dataset-CVPR-2018.html">dataset</a>)
+<li> Ke Yan, Le Lu, Ronald M. Summers, "<b>Unsupervised Body Part Regression via Spatially Self-ordering Convolutional Neural Networks</b>", IEEE International Symposium on Biomedical Imaging (ISBI), oral, 2018 (<a href="https://arxiv.org/abs/1707.03891">arXiv</a>, <a href="https://github.com/rsummers11/CADLab/tree/master/body_part_regressor">code</a>)
+<li> Ke Yan and David Zhang, "<b>Blood glucose prediction by breath analysis system with feature selection and model fusion</b>," 2014 36th Annual Intl. Conf. of the IEEE Engineering in Medicine and Biology Society (EMBC), oral presentation, Chicago, 2014.
+<li> Ke Yan, Youbin Chen, and David Zhang, "<b>Gabor surface feature for face recognition</b>," 2011 First Asian Conference on Pattern Recognition (ACPR), oral presentation, 2011.
+</ol>
+
+</br>
+Journals:
+
+<ol>
+<li> Xiaoyu Bai, Fan Bai, Xiaofei Huo, Jia Ge, Jingjing Lu, Xianghua Ye, Ke Yan, Yong Xia, "<b>SAMv2: A Unified Framework for Learning Appearance, Semantic and Cross-Modality Anatomical Embeddings</b>", in submission, 2023  (<a href="https://github.com/alibaba-damo-academy/self-supervised-anatomical-embedding-v2">code and models</a>)
+<li> Ke Yan*, Jinzheng Cai, Dakai Jin, Shun Miao, Dazhou Guo,Adam P. Harrison, Youbao Tang, Jing Xiao, Jingjing Lu*, Le Lu, "<b>SAM: Self-supervised Learning of Pixel-wise Anatomical Embeddings in Radiological Images</b>". IEEE Trans. on Medical Imaging, 2022 (<a href="https://arxiv.org/pdf/2012.02383.pdf">pdf</a>)
+<li> Bowen Li, Dar-In Tai, Ke Yan, Yi-Cheng Chen, Shiu-Feng Huang, Tse-Hwa Hsu, Wan-Ting Yu, Jing Xiao, Le Lu, Adam P. Harrison, "<b>Accurate and Generalizable Quantitative Scoring of Liver Steatosis from Ultrasound Images via Scalable Deep Learning</b>". World Journal of Gastroenterology, 2021 (<a href="https://arxiv.org/ftp/arxiv/papers/2110/2110.05664.pdf">pdf</a>)
+<li> Veit Sandfort, <u>Ke Yan</u>, Peter M. Graffy, Perry J. Pickhardt, Ronald M. Summers, "<b>Use of Variational Autoencoders with Unsupervised Learning to Detect Incorrect Organ Segmentations on CT</b>", Radiology: Artificial Intelligence, 2021 (<a href="https://pubs.rsna.org/doi/abs/10.1148/ryai.2021200218">pdf</a>)
+<li> Ke Yan, Jinzheng Cai, Youjing Zheng, Adam P. Harrison, Dakai Jin, You-Bao Tang, Yu-Xing Tang, Lingyun Huang, Jing Xiao, Le Lu, "<b>Learning from Multiple Datasets with Heterogeneous and Partial Labels for Universal Lesion Detection in CT</b>", IEEE Transactions on Medical Imaging, Oct. 2021 (<a href="https://arxiv.org/abs/2009.02577">arXiv</a>)
+<li> Jinzheng Cai, Adam P. Harrison, Youjing Zheng, <u>Ke Yan</u>, Yuankai Huo, Jing Xiao, Lin Yang, Le Lu, "<b>Lesion-Harvester: Iteratively Mining Unlabeled Lesions and Hard-Negative Examples at Scale</b>", IEEE Transactions on Medical Imaging, Jan. 2021 (<a href="https://arxiv.org/abs/2001.07776">arXiv</a>)
+<li> Lianyan Xu, <u>Ke Yan</u>, Le Lu, Weihong Zhang, Xu Chen, Xiaofei Huo, Jingjing Lu, "<b>External and Internal Validation of a Computer Assisted Diagnostic Model for Detecting Multi-Organ Mass Lesions in CT images</b>", Chinese Medical Sciences Journal, 2021 (<a href="http://cmsj.cams.cn/CN/abstract/abstract3371.shtml">pdf</a>).
+<li> Yu-Xing Tang, Youbao Tang, Yifan Peng, <u>Ke Yan</u>, Mohammadhadi Bagheri, Bernadette Redd, Catherine Brandon, Zhiyong Lu, Mei Han, Jing Xiao, and Ronald Summers, "<b>Automated abnormality classification of chest radiographs using deep convolutional neural networks</b>", npj Digital Medicine (Nature Partner Journals), 2020.
+<li> Veit Sandfort, <u>Ke Yan</u>, Perry J. Pickhardt, Ronald M. Summers, "<b>Data augmentation using generative adversarial networks (CycleGAN) to improve generalizability in CT segmentation tasks</b>", Scientific Reports, 2019 (<a href="https://www.nature.com/articles/s41598-019-52737-x">paper</a>)
+<li> Atsushi Teramoto, Hiroshi Fujita, Tetsuya Tsukamoto, Yuka Kiriyama, <u>Ke Yan</u>, et al., "<b>Automated classification of benign and malignant cells from lung cytological images using deep convolutional neural network</b>," Informatics in Medicine Unlocked, 2019.
+<li> Ke Yan, Xiaosong Wang, Le Lu, Ronald M. Summers, "<b>DeepLesion: Automated Mining of Large-Scale Lesion Annotations and Universal Lesion Detection with Deep Learning</b>", Journal of Medical Imaging, 2018 (<a href="\papers\18_JMI_DeepLesion.pdf">paper</a>)
+<li> Ke Yan, Lu Kou, and David Zhang, "<b>Learning Domain-Invariant Subspace Using Domain Features and Independence Maximization</b>,” IEEE Transactions on Cybernetics. (IF=4.943), Jan., 2017</li>
+<li> Ke Yan, Lu Kou, and David Zhang, “<b>Correcting Instrumental Variation and Time-Varying Drift Using Parallel and Serial Multitask Learning</b>,” IEEE Transactions on Instrumentation and Measurement (IF=2.456), Jun., 2017. </li>
+<li> Ke Yan, and David Zhang, “<b>Correcting Instrumental Variation and Time-varying Drift: A Transfer Learning Approach with Autoencoders</b>,” IEEE Transactions on Instrumentation and Measurement (IF=1.808), Sep., 2016. </li>
+<li> Ke Yan, and David Zhang, “<b>Calibration transfer and drift compensation of e-noses via coupled task learning</b>,” Sensors and Actuators B: Chemical (IF=4.097), Mar., 2016. </li>
+<li> Ke Yan, and David Zhang, “<b>Improving the transfer ability of prediction models for electronic noses</b>,” Sensors and Actuators B: Chemical (IF=4.097), Dec., 2015. </li>
+<li> Ke Yan, and David Zhang, “<b>Feature selection and analysis on correlated gas sensor data with recursive feature elimination</b>,” Sensors and Actuators B: Chemical (IF=4.097), Jun., 2015. </li>
+<li> Ke Yan, David Zhang, Darong Wu, Hua Wei, and Guangming Lu, “<b>Design of a breath analysis system for diabetes screening and blood glucose level prediction</b>,” IEEE Transactions on Biomedical Engineering (IF=2.347), Nov., 2014. </li>
+</ol>
+
+</br>
+Books:
+<ol>
+<li> D Jin, AP Harrison, L Zhang, K Yan, Y Wang, J Cai, S Miao, L Lu. "<b>Artificial intelligence in radiology</b>", book chapter of "<b>Artificial Intelligence in Medicine</b>", Elsevier, 2020.
+<li> Ke Yan et al., "<b>Deep Lesion Graph in the Wild: Relationship Learning and Organization of Significant Radiology Image Findings in a Diverse Large-Scale Lesion Database</b>", book chapter of "<b>Deep Learning and Convolutional Neural Networks for Medical Imaging and Clinical Informatics</b>", Springer, 2019.
+<li> 闫轲，《<b>电子鼻信号分析关键算法研究（清华大学优秀博士学位论文丛书）</b>》，清华大学出版社，2019. (Ke Yan, "<b>Research on Key Signal Analysis Algorithms for Electronic Noses</b>", Outstanding Doctoral Dissertation Series of Tsinghua University, Tsinghua University Press, 2019)
+<li> David Zhang, Dongmin Guo, and Ke Yan, “<b>Breath Analysis for Medical Applications</b>,” Springer, 2017.
+</ol>
+</br>
+
+</br>
+Abstracts:
+
+<ol>
+<li> <b>RSNA 2023</b>: 5 abstracts, "Automatic Liver Tumor Screening and Differential Diagnosis in CT Using Pixel-Lesion-Patient Network with Reader Study and External Validation" (oral), "Identifying Metastatic Lymph Node Stations using a Local-Global Deep Hybrid Network with Prior-guided Supervision in Esophageal Cancer Patients", "Opportunistic Osteoporosis Screening with Bone Mineral Density Estimation on Computed Tomography using Multi-View Semi-Supervised Learning", "Robust and General Phase Recognition on Multi-Phase Contrast-Enhanced CT Scans" (oral), "SAMConvex: Fast Discrete Optimization for Deformable CT Registration using Multi-scale Self-supervised Anatomical Embedding and Correlation Volume"
+<li> <b>RSNA 2022</b>: 5 abstracts, "Interpretable Contrast Phase Classification in CT with Self-Supervised Deep Anatomical Embedding and Prior Knowledge" (oral); "Automatic Detection of Enlarged Chest Lymph Nodes in Contrast & Non-Contrast Chest CT: An External Evaluation"; "Thoracic Lymph Node Segmentation in Chest CT Using Lymph Node Station Stratification and Size Encoding" (oral); "Automatic Lymph Node Station Labeling in chest CT via Accurate Deep Station Parsing" (oral); "Effective Opportunistic Esophageal Cancer Screening Using Non-contrast CT Imaging" (oral)
+<li> <b>AFSUMB</b>: Bowen Li, Dar-In Tai*, Ke Yan, Yi-Cheng Chen, Shiu-Feng Huang, Tse-Hwa Hsu, Wan-Ting Yu, Jing Xiao, Le Lu, Adam P. Harrison*, "Accurate and Generalizable Quantitative Scoring of Liver Steatosis from Ultrasound Images via Scalable Deep Learning", Bowen got the silver winner of the Young Investigator Award of AFSUMB (Asian Federation of Societies for Ultrasound in Medicine and Biology).
+<li> <b>RSNA 2021</b>: 6 abstracts, Lianyan Xu et al., "Multi-organ Universal Lesion Detection In CT Scans: An Independent External Validation" (oral); Youbao Tang et al., "Automatic RECIST Measurement In Longitudinal CT Imaging Studies", (oral), "Accurate Weakly-supervised Volumetric Universal Lesion Segmentation Using Large-scale Clinical RECIST Diameter Annotations And Regional Level Set Loss" (oral), "Automatically, Precisely, And Comprehensively Measuring Tumor Sizes With Minimal Human Effort"; Bowen Li et al., "Accurate And Reliable Liver Steatosis Assessment From Conventional Ultrasound Images Trained With Subjective Ratings" (oral); Fengze Liu et al., "SAME: Fast And Accurate Algorithm For Deformable Image Registration On CT".
+<li> <b>ASTRO 2021</b>: Z Zhu et al., "Deep Learning Based Lymph Node Gross Tumor Volume Detection via Distance-guided Gating using CT and 18F-FDG PET in Esophageal Cancer Radiotherapy".
+<li> <b>RSNA 2020</b>: 5 abstracts, Youbao Tang et al., "One Click Guided Automatic RECIST Lesion Measurement and Segmentation on CT Scans" (Featured Papers); Bowen Li et al., "Automatic Liver Fibrosis Assessment from Conventional Ultrasound Images Using Global Hetero Image Fusion"; Jinzheng Cai et al., "Automatic Hepatocellular Carcinoma Detection in Patients with Chronic Liver Diseases Using Dynamic Contrast-enhanced CT and Light-Weight 3D Convolutional Neural Network"; Zhuotun Zhu et al., "Lymph Node Gross Tumor Volume Detection and Segmentation via Distance-based Gating Using CT/PET Imaging in Esophageal Cancer Radiotherapy"; Yuankai Huo et al., "Identifying and Characterizing Indeterministic Liver Lesions via Deep Learning on Large-scale Dynamic Contrast Enhanced CT Imaging Data from Patients Receiving Invasive Procedures".
+<li> <b>RSNA 2019</b>: 3 abstracts, Ke Yan et al., "Comprehensive Lesion Tagging on Diverse CT Images: Learning from Radiology Reports and Label Ontology" (Scientific Paper); "MULAN: Multitask Universal Lesion Analysis Network for Joint Lesion Detection, Tagging, and Segmentation in CT Images" (Scientific Paper); Veit Sandfort et al., "CT Organ Segmentation: Use of Variational Autoencoders to Detect Incorrect Segmentations in a Large Dataset (> 12,000 CT scans)" (Scientific Paper).
+<li> <b>RSNA 2018</b>: 3 abstracts, Ke Yan et al., "Relationship Learning and Organization of Significant Radiology Image Findings for Lesion Retrieval and Matching" (Scientific Paper, <b>RSNA Trainee Research Prize</b>); "3D Context Enhanced Region-based Convolutional Neural Network for Universal Lesion Detection in a Large Database of 32,735 Manually Measured Lesions on Body CT" (Scientific Poster); Youbao Tang et al., "CT Image Enhancement for Lesion Segmentation Using Stacked Generative Adversarial Networks".
+<li> <b>RSNA 2017</b>: 1 abstract, Ke Yan*, Xiaosong Wang*, Le Lu, Ronald Summers, "Detection of Radiology Image Findings using Large-Scale Clinical Lesion Annotations", scientific poster (<a href="https://arxiv.org/abs/1710.01766">arXiv</a>)
+
+<p class="cvitem"> Education and working experiences </p>
+<ul type="dot">
+<li> 2021.10-&nbsp;&nbsp;&nbsp;&nbsp;now&nbsp;&nbsp;&nbsp;&nbsp;: Staff Algorithm Engineer at Alibaba DAMO Academy, Beijing, China.
+<li> 2019.05-2021.10 : Senior Research Scientist at PAII Inc. (Ping An AI Institute), Bethesda, US.
+<li> 2017.01-2019.05 : PostDoc in Imaging Biomarkers and Computer-Aided Diagnosis Laboratory, National Institutes of Health, US. Current research direction: lesion detection and characterization in CT images with deep learning. </li>
+<li> 2016.08-2016.11 : Researcher in Deephi Tech. Topic: Pedestrian detection using convolutional neural networks. </li>
+<li> 2011.09-2016.07 : PhD student in Dept. Electronic Engineering, Tsinghua University. </li>
+<li> 2015.07-2015.08 : Intern in IBM China Research Lab. Topic: Robot-based intelligent shopping assistant.</li>
+<li> 2013.07-2013.08 : Intern in XingKe Intelligent Tech. Co. Ltd., China. Topic: Gesture recognition based on Kinect and Unity3D.</li>
+<li> 2011.08-2012.08 : Research Assistant in Dept. Computing, Hong Kong Polytechnic University.
+<li> 2010.03-2011.08 : Research topic: A face recognition system, received over 10k downloads until 2014 in <a href="https://code.google.com/p/facerecog/">Google code</a>.</li>
+<li> 2006.09-2010.07 :	Undergraduate student in Dept. Electronics Engineering, Tsinghua University.</li>
+</ul>
+</br>
+<p class="cvitem"> Awards </p>
+<ul type="circle">
+<li> Top 10 Sharers/Speakers (最佳分享者) in Ping An Technology, 2021.
+<li> CVPR 2021, 2022 and TMI Outstanding Reviewer;</li>
+<li> ISBI 2019 best paper award finalist;</li>
+<li> RSNA 2018 Trainee Research Prize;</li>
+<li> Tsinghua University Excellent Doctoral Dissertation Award (2016);</li>
+<li> First prize of Tsinghua Outstanding Scholarship, 2 times (2014, 2015);</li>
+<li> First prize of Foxconn Scholarship, 2 times (2012, 2013);</li>
+<li> Best Intern Demonstration in IBM China Research Lab (2015);</li>
+<li> Best Creativity Award in the First Photo Contest of University Town of Shenzhen.</li>
+</ul>
+<!--
+<p class="cvitem"> Skills </p>
+<p class="cvcontent">A good understanding and implementation experience of <a href="/programs/">various machine learning and computer vision algorithms</a>. </p>
+<p class="cvcontent">Familiar with deep learning, especially CNN techniques and libraries (Caffe, TensorFlow, Theano). </p>
+<p class="cvcontent">Proficient in Matlab, C/C++ (including OpenCV), and Python; Familiar with Java (including Android), and C#. </p>
+
+<p class="cvitem"> Self-evaluation </p>
+<ul type="square">
+<li> A quick learner, always ready to learn new things; </li>
+<li> Creative, good at analyzing problems and giving efficient solutions; </li>
+<li> Self-driven hard-worker, strong sense of responsibility; </li>
+<li> Particularly interested in making computers more intelligent. </li>
+</ul>
+-->
+				</article>
+
+				
+
+			</div> 
+
+		</div>
+	</div>
+
+	<!-- below: originally from default.html -->
+	<section class="pager">
+  
+  
+</section>
+
+
+
+	<footer class="site-footer">
+
+  <p>Copyright &copy; <a href="/">Ke YAN</a></p>
+  <p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a> 
+  on 
+  
+  <a href="https://github.com/">Github</a>
+  
+  | Theme <a href="https://github.com/yulijia/freshman21/">Freshman21</a> Design by <a href="http://yulijia.net">Lijia Yu</a>  
+
+</footer>
+
+
+</div>
+
+</body>
+
+</html>
